@@ -38,14 +38,7 @@ ul{
   margin-block-end: 0;
   padding-inline-start: 0;
 }
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.test-bloc{
-    @include flex-center;
-}
+
 .full-width{
   .vce.vce-single-image-wrapper{
     width:100%;
@@ -58,5 +51,175 @@ ul{
         height: auto;
       }
     }
+  }
+}
+// ============================================
+// VARIABLES GLOBALES - Financement Sourire
+// ============================================
+
+// Couleurs
+$color-primary    : #2D1B69;   // Violet foncé (bouton tel, texte logo)
+$color-secondary  : #7C5CBF;   // Violet moyen (nav background)
+$color-accent     : #9B6FE0;   // Violet clair
+$color-white      : #FFFFFF;
+$color-text       : #1A1A1A;
+$color-grey-light : #F5F5F5;
+
+// Typographie
+$font-primary : 'Inter', 'Roboto', sans-serif;
+
+// Breakpoints
+$bp-mobile  : 767px;
+$bp-tablet  : 1024px;
+
+// ============================================
+// MIXINS RÉUTILISABLES
+// ============================================
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin mobile {
+  @media (max-width: $bp-mobile) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: $bp-tablet) { @content; }
+}
+
+@mixin btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+  }
+}
+
+// ============================================
+// CLASSES UTILITAIRES GLOBALES
+// ============================================
+
+.center    { text-align: center; }
+.uppercase { text-transform: uppercase; }
+.white     { color: $color-white; }
+.underline { text-decoration: underline; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nowrap {
+  white-space: nowrap;
+  @include mobile { white-space: inherit; }
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1, h2, h3, h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: inherit;
+}
+
+.vce { margin-bottom: 0; }
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+// Conteneur max-width centré
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Boutons réutilisables
+.btn-primary {
+  @include btn-base;
+  background-color: $color-primary;
+  color: $color-white;
+  border: 2px solid $color-primary;
+}
+
+.btn-outline {
+  @include btn-base;
+  background-color: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+// Images full width (Visual Composer)
+.full-width {
+  .vce.vce-single-image-wrapper {
+    width: 100%;
+    height: auto;
+    figure {
+      width: 100%;
+      height: auto;
+      .vce-single-image-figure-inner {
+        width: 100% !important;
+        height: auto;
+      }
+    }
+  }
+}
+
+// CF7 form styles
+.wpcf7-not-valid-tip { display: none !important; }
+
+body {
+  input[type=text], input[type=email], input[type=tel], textarea {
+    &.wpcf7-not-valid { border: 1px solid #ec3c06; }
+  }
+  div.wpcf7-validation-errors {
+    background: #ffe2e2;
+    border: 1px solid #ff8a8a;
+    color: #ec3c06;
+  }
+  div.wpcf7-response-output {
+    margin: 10px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .wpcf7-mail-sent-ng {
+    background: #fff2e2;
+    border: 1px solid #ffbc8a;
+    color: #e17731;
+  }
+  .wpcf7-mail-sent-ok {
+    background: #e8ffe2;
+    border: 1px solid #6fdf51;
+    color: #1ea524;
   }
 }
