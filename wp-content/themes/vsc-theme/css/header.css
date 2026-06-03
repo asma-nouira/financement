@@ -171,10 +171,6 @@ body .wpcf7-mail-sent-ok {
 .site-header .site-branding {
   flex-shrink: 0;
 }
-.site-header .site-branding a img {
-  height: 50px;
-  width: auto;
-}
 .site-header .main-navigation {
   flex: 1;
   display: flex;
