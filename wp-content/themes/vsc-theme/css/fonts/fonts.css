@@ -1,9 +1,30 @@
 
 /* remove this  example line */
 @font-face {
-    font-family: 'Dosis';
-    src: url('## URL ##') format('truetype');
+    font-family: 'Inter Bold';
+    src: url('/wp-content/themes/vsc-theme/css/fonts/Inter/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('/wp-content/themes/vsc-theme/css/fonts/Inter/Inter_18pt-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/wp-content/themes/vsc-theme/css/fonts/Inter/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BeVietnamPro';
+    src: url('/wp-content/themes/vsc-theme/css/fonts/BeVietnamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
