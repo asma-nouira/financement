@@ -237,7 +237,7 @@ body .wpcf7-mail-sent-ok {
 
 /***************/
 .section-hero {
-  padding: 4.1666666667vw 7.2916666667vw 0;
+  padding: 0 7.2916666667vw 0;
   position: relative;
 }
 .section-hero h1 {
