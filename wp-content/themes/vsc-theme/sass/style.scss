@@ -182,6 +182,99 @@ color: #1ea524;
         }
       }
     }
+// ============================================
+// 4. COMMENT ÇA FONCTIONNE
+// ============================================
+.section-comment {
+  background-color: $color-grey-light;
+  padding: calc(138vw / 19.2) calc(140vw / 19.2) calc(145vw / 19.2);
+
+  &__top {
+    margin-bottom: calc(75vw / 19.2);
+
+    &-left {
+      h2 {
+        margin-bottom: calc(12vw / 19.2);
+      }
+      p {
+        font-family: 'Inter Bold';
+        font-size: calc(24vw / 19.2);
+		line-height: 1.20;
+      }
+    }
+
+    &-right {
+      p {
+        font-family: 'Inter';
+        font-size: calc(20vw / 19.2);
+        line-height: 1.4;
+      }
+    }
+  }
+
+  // 3 cartes
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(30vw / 19.2);
+  }
+
+  &__card {
+    background-color: $color-white;
+    border-radius: calc(20vw / 19.2);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: calc(280vw / 19.2);
+      object-fit: cover;
+    }
+
+    &-body {
+      padding: calc(24vw / 19.2);
+
+      h3 {
+        font-family: 'BeVietnamPro', sans-serif;
+        font-weight: 700;
+        font-size: calc(22vw / 19.2);
+        color: $color-text;
+        margin-bottom: calc(10vw / 19.2);
+      }
+
+      p {
+        font-family: 'Inter';
+        font-size: calc(14vw / 19.2);
+        color: $color-text;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+
+    &__top {
+      flex-direction: column;
+      gap: calc(20vw / 7.5);
+      &-left h2 { font-size: calc(28vw / 7.5); }
+      &-left p, &-right p { font-size: calc(14vw / 7.5); }
+      &-right { max-width: 100%; }
+    }
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: calc(20vw / 7.5);
+    }
+
+    &__card {
+      img { height: calc(200vw / 7.5); }
+      &-body {
+        h3 { font-size: calc(18vw / 7.5); }
+        p  { font-size: calc(13vw / 7.5); }
+      }
+    }
+  }
+}
 
 
 
