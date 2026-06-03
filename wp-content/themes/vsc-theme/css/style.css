@@ -313,4 +313,23 @@ body .wpcf7-mail-sent-ok {
     display: none;
   }
 }
+
+.section-objectif {
+  padding: 5.8333333333vw 21.3541666667vw 6.3541666667vw;
+}
+.section-objectif p {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-size: 2.0833333333vw;
+  line-height: 1.2;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  .section-objectif {
+    padding: 6.6666666667vw 4vw;
+  }
+  .section-objectif p {
+    font-size: 2.6666666667vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */

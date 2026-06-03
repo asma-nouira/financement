@@ -136,6 +136,25 @@ color: #1ea524;
     &__badge { display: none; }
   }
 }
+// ============================================
+// 2. CITATION / OBJECTIF
+// ============================================
+.section-objectif {
+  padding: calc(112vw / 19.2) calc(410vw / 19.2) calc(122vw / 19.2);
+
+  p {
+    font-family: 'Inter Bold';
+    font-weight: 700;
+    font-size: calc(40vw / 19.2);
+    line-height: 1.2;
+    color: $color-text;
+  }
+
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+    p { font-size: calc(20vw / 7.5); }
+  }
+}
 
 
 
