@@ -890,4 +890,34 @@ ul.special-ul li::before {
     font-size: 1.8666666667vw;
   }
 }
+
+.section-soutien__content {
+  flex: 1;
+}
+.section-soutien__content h2 {
+  margin-bottom: 0.78125vw;
+}
+.section-soutien__content p {
+  font-family: "Inter";
+  font-size: 1.0416666667vw;
+  line-height: 1.4;
+  margin-bottom: 1.3020833333vw;
+}
+.section-soutien__content p strong {
+  font-family: "Inter Bold";
+  margin-bottom: 1.8229166667vw;
+}
+.section-soutien__content .btn-primary {
+  margin-top: 0.5208333333vw;
+  font-size: 0.8333333333vw;
+  padding: 0.8333333333vw 2.0833333333vw;
+}
+@media (max-width: 767px) {
+  .section-soutien__content h2 {
+    font-size: 3.7333333333vw;
+  }
+  .section-soutien__content p {
+    font-size: 1.8666666667vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */

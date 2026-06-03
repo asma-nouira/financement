@@ -240,6 +240,45 @@ color: #1ea524;
     }
   }
 }
+// ============================================
+// 5. SOUTIEN - texte gauche + image droite
+// ============================================
+.section-soutien {
+
+  &__content {
+    flex: 1;
+
+    h2 {
+      margin-bottom: calc(15vw / 19.2);
+    }
+
+    p {
+      font-family: 'Inter';
+      font-size: calc(20vw / 19.2);
+      line-height: 1.4;
+      margin-bottom: calc(25vw / 19.2);
+
+      strong { font-family: 'Inter Bold'; 
+	  margin-bottom:calc(35vw / 19.2);
+	}
+    }
+
+    .btn-primary {
+      margin-top: calc(10vw / 19.2);
+      font-size: calc(16vw / 19.2);
+      padding: calc(16vw / 19.2) calc(40vw / 19.2);
+    }
+  }
+
+  @include mobile {
+
+
+    &__content {
+      h2 { font-size: calc(28vw / 7.5); }
+      p  { font-size: calc(14vw / 7.5); }
+    }
+  }
+}
 
 
 
