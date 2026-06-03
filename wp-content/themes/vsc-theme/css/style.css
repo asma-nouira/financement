@@ -221,6 +221,18 @@ em {
   white-space: nowrap;
 }
 
+.pt-130 {
+  padding-top: 6.7708333333vw;
+}
+
+.pb-145 {
+  padding-bottom: 7.5520833333vw;
+}
+
+.pr-140 {
+  padding-right: 7.2916666667vw;
+}
+
 .full-width .vce.vce-single-image-wrapper {
   width: 100%;
   height: auto;
@@ -442,6 +454,18 @@ strong {
 em {
   font-style: normal;
   white-space: nowrap;
+}
+
+.pt-130 {
+  padding-top: 6.7708333333vw;
+}
+
+.pb-145 {
+  padding-bottom: 7.5520833333vw;
+}
+
+.pr-140 {
+  padding-right: 7.2916666667vw;
 }
 
 @keyframes fadeInUp {
