@@ -52,6 +52,22 @@ h1, h2, h3, h4 {
   font-weight: inherit;
 }
 
+h1 {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 2.8645833333vw;
+  line-height: 1.09;
+  color: balck;
+}
+
+h2 {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 2.34375vw;
+  line-height: 1.11;
+  color: black;
+}
+
 .vce {
   margin-bottom: 0;
 }
@@ -82,7 +98,9 @@ ul {
   white-space: nowrap;
   background-color: #2C114F;
   color: #FFFFFF;
-  border: 2px solid #2C114F;
+  font-family: "Inter Medium";
+  font-weight: 500;
+  padding: 0.8333333333vw 1.0416666667vw;
 }
 .btn-primary:hover {
   opacity: 0.88;
@@ -165,6 +183,15 @@ body input[type=text].wpcf7-not-valid, body input[type=email].wpcf7-not-valid, b
   border: 1px solid #ec3c06;
 }
 
+body {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.9375vw;
+  color: #000000;
+  line-height: 1.22;
+}
+
 body div.wpcf7-validation-errors {
   background: #ffe2e2;
   border: 1px solid #ff8a8a;
@@ -193,4 +220,77 @@ body .wpcf7-mail-sent-ok {
 }
 
 /***************/
+.section-hero {
+  padding: 4.1666666667vw 7.2916666667vw 0;
+  position: relative;
+}
+.section-hero h1 {
+  margin-bottom: 1.8229166667vw;
+}
+.section-hero p {
+  font-family: "Inter";
+  margin-bottom: 1.3020833333vw;
+}
+.section-hero__badge {
+  position: absolute;
+  bottom: 4.1666666667vw;
+  right: 8.3333333333vw;
+  z-index: 3;
+  background-color: #2C114F;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 8.3333333333vw;
+  height: 8.3333333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5208333333vw;
+}
+.section-hero__badge span {
+  font-family: "Inter";
+  font-size: 0.9375vw;
+  line-height: 1.46;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.section-hero__badge .min-span {
+  font-family: "Inter";
+  font-size: 0.78125vw;
+}
+.section-hero__badge strong {
+  font-family: "Inter Bold";
+  font-size: 0.9375vw;
+  margin-top: 0.2083333333vw;
+}
+@media (max-width: 767px) {
+  .section-hero {
+    flex-direction: column;
+    padding: 5.3333333333vw 4vw;
+    min-height: auto;
+  }
+  .section-hero__content {
+    max-width: 100%;
+  }
+  .section-hero__content h1 {
+    font-size: 4.8vw;
+  }
+  .section-hero__content p {
+    font-size: 1.8666666667vw;
+  }
+  .section-hero__image {
+    width: 100%;
+    margin-top: 4vw;
+  }
+  .section-hero__image::before {
+    display: none;
+  }
+  .section-hero__image img {
+    max-width: 100%;
+  }
+  .section-hero__badge {
+    display: none;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */

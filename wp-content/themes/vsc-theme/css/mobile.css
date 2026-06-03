@@ -52,6 +52,22 @@ h1, h2, h3, h4 {
   font-weight: inherit;
 }
 
+h1 {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 2.8645833333vw;
+  line-height: 1.09;
+  color: balck;
+}
+
+h2 {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 2.34375vw;
+  line-height: 1.11;
+  color: black;
+}
+
 .vce {
   margin-bottom: 0;
 }
@@ -82,7 +98,9 @@ ul {
   white-space: nowrap;
   background-color: #2C114F;
   color: #FFFFFF;
-  border: 2px solid #2C114F;
+  font-family: "Inter Medium";
+  font-weight: 500;
+  padding: 0.8333333333vw 1.0416666667vw;
 }
 .btn-primary:hover {
   opacity: 0.88;

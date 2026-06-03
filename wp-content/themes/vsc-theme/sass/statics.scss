@@ -104,6 +104,22 @@ h1, h2, h3, h4 {
   font-weight: inherit;
 }
 
+h1{
+  font-family: 'BeVietnamPro';
+  font-weight: 700;
+  font-size: calc(55vw / 19.2);
+  line-height: 1.09;
+  color:balck;
+}
+h2{
+ font-family: 'BeVietnamPro';
+  font-weight: 700;
+  font-size: calc(45vw / 19.2);
+  line-height: 1.11;
+  color:black;
+
+}
+
 .vce { margin-bottom: 0; }
 
 ul {
@@ -124,7 +140,9 @@ ul {
   @include btn-base;
   background-color: $color-primary;
   color: $color-white;
-  border: 2px solid $color-primary;
+  font-family: 'Inter Medium';
+  font-weight: 500;
+  padding: calc(16vw / 19.2) calc(20vw / 19.2);
 }
 
 .btn-outline {
