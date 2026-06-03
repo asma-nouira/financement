@@ -68,6 +68,14 @@ h2 {
   color: black;
 }
 
+h3 {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-size: 1.8229166667vw;
+  line-height: 1.2;
+  color: black;
+}
+
 .vce {
   margin-bottom: 0;
 }
@@ -421,66 +429,22 @@ ul.special-ul li::before {
   font-size: 1.0416666667vw;
   line-height: 1.4;
 }
-.section-comment__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5625vw;
-}
 .section-comment__card {
-  background-color: #FFFFFF;
-  border-radius: 1.0416666667vw;
+  border-radius: 1.8229166667vw;
   overflow: hidden;
 }
-.section-comment__card img {
-  width: 100%;
-  height: 14.5833333333vw;
-  object-fit: cover;
-}
 .section-comment__card-body {
-  padding: 1.25vw;
-}
-.section-comment__card-body h3 {
-  font-family: "BeVietnamPro", sans-serif;
-  font-weight: 700;
-  font-size: 1.1458333333vw;
-  color: #000000;
-  margin-bottom: 0.5208333333vw;
-}
-.section-comment__card-body p {
-  font-family: "Inter";
-  font-size: 0.7291666667vw;
-  color: #000000;
-  line-height: 1.6;
+  padding: 1.5625vw;
 }
 @media (max-width: 767px) {
   .section-comment {
     padding: 6.6666666667vw 4vw;
   }
-  .section-comment__top {
-    flex-direction: column;
-    gap: 2.6666666667vw;
-  }
-  .section-comment__top-left h2 {
-    font-size: 3.7333333333vw;
-  }
-  .section-comment__top-left p, .section-comment__top-right p {
-    font-size: 1.8666666667vw;
-  }
-  .section-comment__top-right {
-    max-width: 100%;
-  }
-  .section-comment__cards {
-    grid-template-columns: 1fr;
-    gap: 2.6666666667vw;
-  }
-  .section-comment__card img {
-    height: 26.6666666667vw;
-  }
   .section-comment__card-body h3 {
     font-size: 2.4vw;
   }
   .section-comment__card-body p {
-    font-size: 1.7333333333vw;
+    font-size: 1.8666666667vw;
   }
 }
 /*# sourceMappingURL=../css/style.css.map */

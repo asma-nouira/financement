@@ -68,6 +68,14 @@ h2 {
   color: black;
 }
 
+h3 {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-size: 1.8229166667vw;
+  line-height: 1.2;
+  color: black;
+}
+
 .vce {
   margin-bottom: 0;
 }
