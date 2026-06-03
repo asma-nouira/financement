@@ -382,9 +382,10 @@ ul.special-ul li {
   font-weight: 700;
   font-size: 0.9375vw;
   color: #000000;
-  padding: 0.3125vw 0;
+  padding: 0.15625vw 0;
   padding-left: 1.4583333333vw;
   position: relative;
+  line-height: 1.66;
 }
 ul.special-ul li::before {
   content: "";
