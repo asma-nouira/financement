@@ -60,11 +60,11 @@ $bp-tablet  : 1024px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
+
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight:500;
+  font-size: calc(18vw / 19.2);
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
@@ -142,7 +142,7 @@ ul {
   color: $color-white;
   font-family: 'Inter Medium';
   font-weight: 500;
-  padding: calc(16vw / 19.2) calc(20vw / 19.2);
+  padding: calc(21vw / 19.2) calc(60vw / 19.2);
 }
 
 .btn-outline {

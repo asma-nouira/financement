@@ -88,11 +88,10 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 0.9375vw;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
@@ -100,7 +99,7 @@ ul {
   color: #FFFFFF;
   font-family: "Inter Medium";
   font-weight: 500;
-  padding: 0.8333333333vw 1.0416666667vw;
+  padding: 1.09375vw 3.125vw;
 }
 .btn-primary:hover {
   opacity: 0.88;
@@ -111,11 +110,10 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 0.9375vw;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
