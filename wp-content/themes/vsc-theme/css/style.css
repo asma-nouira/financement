@@ -896,6 +896,7 @@ ul.special-ul li::before {
 }
 .section-soutien__content h2 {
   margin-bottom: 1.3020833333vw;
+  padding-right: 8vw;
 }
 .section-soutien__content p {
   font-family: "Inter";
