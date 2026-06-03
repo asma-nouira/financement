@@ -376,13 +376,14 @@ body .wpcf7-mail-sent-ok {
 
 ul.special-ul {
   list-style: none;
+  padding-top: 6px;
 }
 ul.special-ul li {
   font-family: "Inter Bold";
   font-weight: 700;
   font-size: 0.9375vw;
   color: #000000;
-  padding: 0.15625vw 0;
+  padding: 0.1041666667vw 0;
   padding-left: 1.4583333333vw;
   position: relative;
   line-height: 1.66;
