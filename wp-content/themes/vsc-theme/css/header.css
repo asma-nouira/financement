@@ -208,6 +208,11 @@ strong {
   padding-bottom: 1.3020833333vw;
 }
 
+em {
+  font-style: normal;
+  white-space: nowrap;
+}
+
 .site-header {
   display: flex;
   align-items: center;
