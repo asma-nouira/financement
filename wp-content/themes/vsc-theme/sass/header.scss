@@ -6,7 +6,7 @@
 
 .site-header {
   @include flex-between;
-  background-color: $color-white;
+  background-color: $color-grey-light;
   padding: calc(35vw / 19.2) calc(140vw / 19.2) 8px;
   position: sticky;
   top: 0;
