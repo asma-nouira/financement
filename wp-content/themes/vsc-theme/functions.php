@@ -141,7 +141,7 @@ add_action('wp_footer',function(){
 	wp_enqueue_script( 'vsc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), null, true );
 
 	wp_enqueue_script( 'vsc-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), null, true );
-	
+	  wp_enqueue_script( 'vsc-animations', get_template_directory_uri() . '/js/animations.js', array(), null, true );
 	///////////// slick slider JS ///////////
 	// wp_enqueue_script( 'vsc-slick-js', get_template_directory_uri() . '/slick-slider/slick.min.js', array('jquery'), null, true );
     // wp_enqueue_script( 'vsc-slick-run', get_template_directory_uri() . '/slick-slider/run.js', array('jquery'), null, true );

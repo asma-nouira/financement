@@ -1,0 +1,201 @@
+// ============================================
+// ANIMATIONS - Financement Sourire
+// Principe : éléments invisibles par défaut (is-hidden)
+// JS ajoute .is-visible quand l'élément entre dans le viewport
+// Aucun flex, aucune dépendance externe
+// ============================================
+
+// ============================================
+// KEYFRAMES
+// ============================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes circleGrow {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes badgePop {
+  0%   { transform: translate(-50%, -50%) scale(0) rotate(-15deg); opacity: 0; }
+  70%  { transform: translate(-50%, -50%) scale(1.1) rotate(3deg); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(0deg);   opacity: 1; }
+}
+
+// ============================================
+// CLASSES D'ÉTAT (is-hidden / is-visible)
+// Appliquées par JS via IntersectionObserver
+// ============================================
+
+// Base : état caché avant animation
+[data-animate] {
+  opacity: 0;
+  // Pas de transition ici, c'est l'animation qui gère
+}
+
+// État visible : déclenche l'animation selon data-animate
+[data-animate="fade-up"].is-visible {
+  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-animate="fade-left"].is-visible {
+  animation: fadeInLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-animate="fade-right"].is-visible {
+  animation: fadeInRight 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-animate="scale-in"].is-visible {
+  animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-animate="circle-grow"].is-visible {
+  animation: circleGrow 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-animate="badge-pop"].is-visible {
+  animation: badgePop 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  // On override le transform-origin du badge qui utilise translate(-50%,-50%)
+  // L'animation intègre ce translate donc pas de conflit
+  opacity: 1;
+}
+
+// Délais échelonnés pour les éléments enfants (cartes, items liste)
+[data-delay="1"] { animation-delay: 0.1s; }
+[data-delay="2"] { animation-delay: 0.2s; }
+[data-delay="3"] { animation-delay: 0.3s; }
+[data-delay="4"] { animation-delay: 0.4s; }
+[data-delay="5"] { animation-delay: 0.5s; }
+[data-delay="6"] { animation-delay: 0.6s; }
+
+// ============================================
+// ANIMATIONS PAR SECTION
+// ============================================
+
+// -- HERO --
+// Le cercle violet grandit depuis le coin
+.section-hero__circle {
+  transform-origin: bottom right;
+}
+
+// -- BOUTONS : micro-interaction hover --
+.btn-primary,
+.btn-outline,
+.header-phone,
+.header-contact {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 27, 105, 0.18);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+// -- CARTES section comment : hover lift --
+.section-comment__card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
+  }
+}
+
+// -- FAQ items : transition smooth ouverture --
+.section-faq__answer {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  padding: 0 calc(28vw / 19.2);
+  display: block !important; // override le display:none du SCSS précédent
+}
+
+.section-faq__item.is-open .section-faq__answer {
+  max-height: calc(200vw / 19.2);
+  opacity: 1;
+  padding: 0 calc(28vw / 19.2) calc(20vw / 19.2);
+}
+
+// -- Liens footer --
+.site-footer__nav ul li a {
+  transition: color 0.2s ease, letter-spacing 0.2s ease;
+
+  &:hover {
+    color: $color-white;
+    letter-spacing: 1px;
+  }
+}
+
+// ============================================
+// RESPECT DU PREFERS-REDUCED-MOTION
+// Pour les utilisateurs sensibles aux animations
+// ============================================
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .section-comment__card:hover,
+  .btn-primary:hover,
+  .btn-outline:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
