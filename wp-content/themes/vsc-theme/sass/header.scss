@@ -28,11 +28,10 @@
 
     ul {
       @include flex-center;
-      gap: 8px;
       list-style: none;
       background-color: $color-secondary;
       border-radius: 50px;
-      padding: 10px 20px;
+      padding: calc(21vw / 19.2) calc(10vw / 19.2);
       margin: 0;
 
       li {
@@ -40,7 +39,7 @@
           color: $color-white;
           letter-spacing: 0.5px;
           text-transform: uppercase;
-          padding: 6px 14px;
+          padding: 6px 9px;
           border-radius: 50px;
           transition: background-color 0.2s ease;
           white-space: nowrap;
@@ -64,7 +63,7 @@
   // ---- BOUTONS À DROITE ----
   .header-actions {
     @include flex-center;
-    gap: 12px;
+    gap: 19px;
     flex-shrink: 0;
 
     .header-phone {
