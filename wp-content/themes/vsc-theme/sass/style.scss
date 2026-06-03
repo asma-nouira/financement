@@ -1,11 +1,26 @@
 @import './statics.scss';
 @import './parts/fonts.scss';
 /**************/
+
+html{
+	scroll-behavior: smooth;
+}
 .wpcf7-not-valid-tip{
 	display:none !important;
 }
 body input[type=text].wpcf7-not-valid, body input[type=email].wpcf7-not-valid, body input[type=tel].wpcf7-not-valid, body textarea.wpcf7-not-valid {
 border: 1px solid #ec3c06;
+}
+body::-webkit-scrollbar {
+	width: 5px !important
+}
+body::-webkit-scrollbar-track {
+	background: $color-primary; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+	background-color: white; /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 5px solid $color-primary; /* creates padding around scroll thumb */
 }
 body{
 	margin:0;
@@ -82,7 +97,7 @@ color: #1ea524;
     }
 
     span.uppercase {
-      font-family: 'Inter';
+      font-family: 'Inter Bold';
       font-size: calc(18vw / 19.2);
       line-height: 1.46;
       text-transform: uppercase;

@@ -173,12 +173,30 @@ body .wpcf7-mail-sent-ok {
 }
 
 /**************/
+html {
+  scroll-behavior: smooth;
+}
+
 .wpcf7-not-valid-tip {
   display: none !important;
 }
 
 body input[type=text].wpcf7-not-valid, body input[type=email].wpcf7-not-valid, body input[type=tel].wpcf7-not-valid, body textarea.wpcf7-not-valid {
   border: 1px solid #ec3c06;
+}
+
+body::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2C114F; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 5px solid #2C114F; /* creates padding around scroll thumb */
 }
 
 body {
@@ -251,7 +269,7 @@ body .wpcf7-mail-sent-ok {
   width: 80%;
 }
 .section-hero__badge span.uppercase {
-  font-family: "Inter";
+  font-family: "Inter Bold";
   font-size: 0.9375vw;
   line-height: 1.46;
   text-transform: uppercase;
