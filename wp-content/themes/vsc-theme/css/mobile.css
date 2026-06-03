@@ -187,4 +187,12 @@ body .wpcf7-mail-sent-ok {
 .br-35 {
   border-radius: 35px;
 }
+
+.pb-30 {
+  padding-bottom: 1.5625vw;
+}
+
+.pb-25 {
+  padding-bottom: 0.1041666667vw;
+}
 /*# sourceMappingURL=../css/mobile.css.map */

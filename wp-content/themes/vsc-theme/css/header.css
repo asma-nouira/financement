@@ -188,6 +188,14 @@ body .wpcf7-mail-sent-ok {
   border-radius: 35px;
 }
 
+.pb-30 {
+  padding-bottom: 1.5625vw;
+}
+
+.pb-25 {
+  padding-bottom: 0.1041666667vw;
+}
+
 .site-header {
   display: flex;
   align-items: center;
