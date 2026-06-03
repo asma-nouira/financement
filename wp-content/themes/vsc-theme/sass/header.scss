@@ -79,7 +79,7 @@
       font-size: calc(18vw / 19.2);
       font-weight: 700;
       font-family: 'Inter Bold';
-      padding: 12px 22px;
+      padding: calc(19vw / 19.2) calc(37vw / 19.2);
        &:hover {
         background-color: $color-secondary;
         color: $color-white;
@@ -93,7 +93,8 @@
       border: 1.5px solid $color-primary;
       font-size: calc(16vw / 19.2);
       font-weight: 700;
-          font-family: 'Inter Bold';
+      font-family: 'Inter Bold';
+     padding: calc(19vw / 19.2) calc(55vw / 19.2);
 
       &:hover {
         background-color: $color-primary;

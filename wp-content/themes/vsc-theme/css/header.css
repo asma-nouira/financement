@@ -236,7 +236,7 @@ body .wpcf7-mail-sent-ok {
   font-size: 0.9375vw;
   font-weight: 700;
   font-family: "Inter Bold";
-  padding: 12px 22px;
+  padding: 0.9895833333vw 1.9270833333vw;
 }
 .site-header .header-actions .header-phone:hover {
   opacity: 0.88;
@@ -264,6 +264,7 @@ body .wpcf7-mail-sent-ok {
   font-size: 0.8333333333vw;
   font-weight: 700;
   font-family: "Inter Bold";
+  padding: 0.9895833333vw 2.8645833333vw;
 }
 .site-header .header-actions .header-contact:hover {
   opacity: 0.88;
