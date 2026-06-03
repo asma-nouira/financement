@@ -242,6 +242,10 @@ body .wpcf7-mail-sent-ok {
   opacity: 0.88;
   transform: translateY(-1px);
 }
+.site-header .header-actions .header-phone:hover {
+  background-color: #976CFF;
+  color: #FFFFFF;
+}
 .site-header .header-actions .header-contact {
   display: inline-flex;
   align-items: center;
@@ -256,7 +260,7 @@ body .wpcf7-mail-sent-ok {
   white-space: nowrap;
   background-color: transparent;
   color: #000000;
-  border: 1.5px solid #976CFF;
+  border: 1.5px solid #2C114F;
   font-size: 0.8333333333vw;
   font-weight: 700;
   font-family: "Inter Bold";
