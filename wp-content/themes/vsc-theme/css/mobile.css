@@ -172,6 +172,11 @@ body .wpcf7-mail-sent-ok {
   color: #1ea524;
 }
 
+strong {
+  font-family: "Inter Bold";
+  font-weight: 700;
+}
+
 .pl-140 {
   padding-left: 7.2916666667vw;
 }
