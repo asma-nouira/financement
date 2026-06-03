@@ -905,10 +905,9 @@ ul.special-ul li::before {
 }
 .section-soutien__content p strong {
   font-family: "Inter Bold";
-  margin-bottom: 1.8229166667vw;
 }
 .section-soutien__content .btn-primary {
-  margin-top: 0.5208333333vw;
+  margin-top: 1.8229166667vw;
   font-size: 0.8333333333vw;
   padding: 0.8333333333vw 2.0833333333vw;
 }
