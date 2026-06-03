@@ -361,4 +361,29 @@ body .wpcf7-mail-sent-ok {
     font-size: 2.6666666667vw;
   }
 }
+
+ul.special-ul {
+  list-style: none;
+}
+ul.special-ul li {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-size: 0.9375vw;
+  color: #000000;
+  padding: 0.3125vw 0;
+  padding-left: 1.4583333333vw;
+  position: relative;
+}
+ul.special-ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4166666667vw;
+  width: 0.5729166667vw;
+  height: 0.5729166667vw;
+  background-image: url("/wp-content/uploads/2026/06/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 /*# sourceMappingURL=../css/style.css.map */
