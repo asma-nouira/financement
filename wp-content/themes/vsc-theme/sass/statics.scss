@@ -1,43 +1,3 @@
-$black : #000;
-.center{
-  text-align: center;
-}
-.uppercase{
-  text-transform: uppercase;
-}
-a{
-  text-decoration: none;
-  color:inherit;
-}
-.white{
-  color:white;
-}
-.underline{
-  text-decoration: underline;
-}
-.nowrap{
-  white-space: nowrap;
-  @media( max-width : 767px){
-    white-space: inherit;
-  }
-}
-p{
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-h1,h2,h3{
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-weight: inherit;
-}
-.vce{
-  margin-bottom:0;
-}
-ul{
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
 
 .full-width{
   .vce.vce-single-image-wrapper{
@@ -58,15 +18,15 @@ ul{
 // ============================================
 
 // Couleurs
-$color-primary    : #2D1B69;   // Violet foncé (bouton tel, texte logo)
-$color-secondary  : #7C5CBF;   // Violet moyen (nav background)
+$color-primary    : #2C114F;   // Violet foncé (bouton tel, texte logo)
+$color-secondary  : #976CFF;   // Violet moyen (nav background)
 $color-accent     : #9B6FE0;   // Violet clair
 $color-white      : #FFFFFF;
-$color-text       : #1A1A1A;
+$color-text       : #000000;
 $color-grey-light : #F5F5F5;
 
 // Typographie
-$font-primary : 'Inter', 'Roboto', sans-serif;
+$font-primary : 'Inter';
 
 // Breakpoints
 $bp-mobile  : 767px;

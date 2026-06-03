@@ -7,8 +7,8 @@
 .site-header {
   @include flex-between;
   background-color: $color-white;
-  padding: 0 40px;
-  height: 80px;
+  padding: 0 calc(140vw / 19.2);
+  height: calc(80vw / 19.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -85,8 +85,8 @@
     .header-contact {
       @include btn-base;
       background-color: transparent;
-      color: $color-primary;
-      border: 2px solid $color-primary;
+      color: $color-text;
+      border: 1.5px solid $color-secondary;
       font-size: calc(16vw / 19.2);
       font-weight: 700;
           font-family: 'Inter Bold';

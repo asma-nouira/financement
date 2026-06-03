@@ -1,54 +1,3 @@
-.center {
-  text-align: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.white {
-  color: white;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-@media (max-width: 767px) {
-  .nowrap {
-    white-space: inherit;
-  }
-}
-
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-h1, h2, h3 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-weight: inherit;
-}
-
-.vce {
-  margin-bottom: 0;
-}
-
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
 .full-width .vce.vce-single-image-wrapper {
   width: 100%;
   height: auto;
@@ -131,9 +80,9 @@ ul {
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
-  background-color: #2D1B69;
+  background-color: #2C114F;
   color: #FFFFFF;
-  border: 2px solid #2D1B69;
+  border: 2px solid #2C114F;
 }
 .btn-primary:hover {
   opacity: 0.88;
@@ -153,15 +102,15 @@ ul {
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
   background-color: transparent;
-  color: #2D1B69;
-  border: 2px solid #2D1B69;
+  color: #2C114F;
+  border: 2px solid #2C114F;
 }
 .btn-outline:hover {
   opacity: 0.88;
   transform: translateY(-1px);
 }
 .btn-outline:hover {
-  background-color: #2D1B69;
+  background-color: #2C114F;
   color: #FFFFFF;
 }
 
@@ -212,8 +161,8 @@ body .wpcf7-mail-sent-ok {
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
-  padding: 0 40px;
-  height: 80px;
+  padding: 0 7.2916666667vw;
+  height: 4.1666666667vw;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -240,7 +189,7 @@ body .wpcf7-mail-sent-ok {
   justify-content: center;
   gap: 8px;
   list-style: none;
-  background-color: #7C5CBF;
+  background-color: #976CFF;
   border-radius: 50px;
   padding: 10px 20px;
   margin: 0;
@@ -282,7 +231,7 @@ body .wpcf7-mail-sent-ok {
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
-  background-color: #2D1B69;
+  background-color: #2C114F;
   color: #FFFFFF;
   font-size: 0.9375vw;
   font-weight: 700;
@@ -306,8 +255,8 @@ body .wpcf7-mail-sent-ok {
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
   background-color: transparent;
-  color: #2D1B69;
-  border: 2px solid #2D1B69;
+  color: #000000;
+  border: 1.5px solid #976CFF;
   font-size: 0.8333333333vw;
   font-weight: 700;
   font-family: "Inter Bold";
@@ -317,7 +266,7 @@ body .wpcf7-mail-sent-ok {
   transform: translateY(-1px);
 }
 .site-header .header-actions .header-contact:hover {
-  background-color: #2D1B69;
+  background-color: #2C114F;
   color: #FFFFFF;
 }
 
@@ -349,7 +298,7 @@ body .wpcf7-mail-sent-ok {
   .site-header .main-navigation .menu-toggle {
     display: block;
     width: 100%;
-    background: #7C5CBF;
+    background: #976CFF;
     color: #FFFFFF;
     border: none;
     padding: 12px;
