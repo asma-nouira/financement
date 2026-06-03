@@ -241,12 +241,14 @@ body .wpcf7-mail-sent-ok {
   border-radius: 50%;
   width: 10.4166666667vw;
   height: 10.4166666667vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 0.5208333333vw;
+}
+.section-hero__badge-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 .section-hero__badge span.uppercase {
   font-family: "Inter";

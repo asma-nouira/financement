@@ -71,12 +71,15 @@ color: #1ea524;
     border-radius: 50%;
     width: calc(200vw / 19.2);
     height: calc(200vw / 19.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: calc(10vw / 19.2);
+    
+	  &-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
 
     span.uppercase {
       font-family: 'Inter';
