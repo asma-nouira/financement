@@ -229,6 +229,7 @@ body .wpcf7-mail-sent-ok {
 .section-hero p {
   font-family: "Inter";
   margin-bottom: 1.3020833333vw;
+  padding-right: 2vw;
 }
 .section-hero__badge {
   position: absolute;
@@ -247,7 +248,7 @@ body .wpcf7-mail-sent-ok {
   text-align: center;
   padding: 0.5208333333vw;
 }
-.section-hero__badge span {
+.section-hero__badge span.uppercase {
   font-family: "Inter";
   font-size: 0.9375vw;
   line-height: 1.46;
