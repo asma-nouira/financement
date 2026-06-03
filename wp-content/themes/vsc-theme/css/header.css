@@ -192,6 +192,9 @@ strong {
 .br-35 {
   border-radius: 35px;
 }
+.br-35 img {
+  border-radius: 35px;
+}
 
 .pb-30 {
   padding-bottom: 1.5625vw;
