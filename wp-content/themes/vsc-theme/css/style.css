@@ -853,6 +853,7 @@ ul.special-ul li::before {
 }
 .section-comment__card-body h3 {
   padding-bottom: 0.78125vw;
+  padding-right: 5vw;
 }
 @media (max-width: 767px) {
   .section-comment {
