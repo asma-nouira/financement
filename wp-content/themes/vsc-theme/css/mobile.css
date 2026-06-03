@@ -171,4 +171,20 @@ body .wpcf7-mail-sent-ok {
   border: 1px solid #6fdf51;
   color: #1ea524;
 }
+
+.pl-140 {
+  padding-left: 7.2916666667vw;
+}
+
+.pr-205 {
+  padding-right: 10.6770833333vw;
+}
+
+.pb-170 {
+  padding-bottom: 8.8541666667vw;
+}
+
+.br-35 {
+  border-radius: 35px;
+}
 /*# sourceMappingURL=../css/mobile.css.map */
