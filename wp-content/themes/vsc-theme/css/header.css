@@ -247,14 +247,15 @@ body .wpcf7-mail-sent-ok {
 }
 .site-header .main-navigation ul li a {
   color: #FFFFFF;
-  font-size: 13px;
-  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 50px;
   transition: background-color 0.2s ease;
   white-space: nowrap;
+  font-weight: 500;
+  font-family: "Inter Medium";
+  font-size: 0.7291666667vw;
 }
 .site-header .main-navigation ul li a:hover, .site-header .main-navigation ul li a:focus {
   background-color: rgba(255, 255, 255, 0.2);
@@ -283,8 +284,9 @@ body .wpcf7-mail-sent-ok {
   white-space: nowrap;
   background-color: #2D1B69;
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 0.9375vw;
   font-weight: 700;
+  font-family: "Inter Bold";
   padding: 12px 22px;
 }
 .site-header .header-actions .header-phone:hover {
@@ -306,8 +308,9 @@ body .wpcf7-mail-sent-ok {
   background-color: transparent;
   color: #2D1B69;
   border: 2px solid #2D1B69;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 0.8333333333vw;
+  font-weight: 700;
+  font-family: "Inter Bold";
 }
 .site-header .header-actions .header-contact:hover {
   opacity: 0.88;

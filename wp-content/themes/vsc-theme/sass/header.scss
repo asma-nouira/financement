@@ -43,14 +43,15 @@
       li {
         a {
           color: $color-white;
-          font-size: 13px;
-          font-weight: 600;
           letter-spacing: 0.5px;
           text-transform: uppercase;
           padding: 6px 14px;
           border-radius: 50px;
           transition: background-color 0.2s ease;
           white-space: nowrap;
+          font-weight: 500;
+          font-family: 'Inter Medium';
+          font-size:calc(14vw / 19.2);
 
           &:hover,
           &:focus {
@@ -75,8 +76,9 @@
       @include btn-base;
       background-color: $color-primary;
       color: $color-white;
-      font-size: 15px;
+      font-size: calc(18vw / 19.2);
       font-weight: 700;
+      font-family: 'Inter Bold';
       padding: 12px 22px;
     }
 
@@ -85,8 +87,9 @@
       background-color: transparent;
       color: $color-primary;
       border: 2px solid $color-primary;
-      font-size: 15px;
-      font-weight: 600;
+      font-size: calc(16vw / 19.2);
+      font-weight: 700;
+          font-family: 'Inter Bold';
 
       &:hover {
         background-color: $color-primary;
