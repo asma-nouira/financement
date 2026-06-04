@@ -417,9 +417,6 @@ em {
   }
 }
 @media (max-width: 1024px) {
-  .site-header {
-    padding: 0 20px;
-  }
   .site-header .main-navigation ul {
     gap: 4px;
     padding: 8px 14px;
