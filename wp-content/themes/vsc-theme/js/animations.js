@@ -1,32 +1,39 @@
 /**
  * Animations au scroll - Financement Sourire
- * Observe les classes .anim-* et ajoute .is-visible au scroll
  * Désactivé automatiquement dans l'éditeur Visual Composer
  */
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Désactiver les animations dans l'éditeur Visual Composer
-  // VC utilise ?vcv-action=frontend dans l'URL
-  var isVCEditor = document.body.classList.contains('vc_editor')
-                || document.body.classList.contains('vc-editor-mode')
-                || window.location.search.indexOf('vcv-action') !== -1
-                || window.location.search.indexOf('vc_editable') !== -1
-                || typeof window.vcv !== 'undefined';
+  var ANIM_SELECTOR = '.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-circle-grow, .anim-badge-pop';
 
+  // VC charge le frontend dans une iframe
+  // Il injecte window.vcv, window.VCV_WP_NONCE et des classes sur le body
+  var isVCEditor = typeof window.vcv !== 'undefined'
+                || typeof window.VCV_WP_NONCE !== 'undefined'
+                || document.body.classList.contains('vcv-is-editor-opened')
+                || document.querySelector('.vcv-layout') !== null
+                || document.querySelector('[data-vcv-element]') !== null;
+
+  // Forcer tous les éléments visibles dans l'éditeur
   if (isVCEditor) {
-    // Rendre tous les éléments animés visibles immédiatement
-    var allAnimated = document.querySelectorAll(
-      '.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-circle-grow, .anim-badge-pop'
-    );
-    allAnimated.forEach(function (el) {
+    document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
       el.classList.add('is-visible');
     });
+
+    // VC peut ajouter des éléments dynamiquement, on observe les nouveaux
+    var mutationObserver = new MutationObserver(function () {
+      document.querySelectorAll(ANIM_SELECTOR + ':not(.is-visible)').forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+    });
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
     return;
   }
 
   // Désactiver si prefers-reduced-motion
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  // IntersectionObserver pour le frontend normal
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -39,12 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     rootMargin: '0px 0px -40px 0px'
   });
 
-  // Observer toutes les classes anim-*
-  var elements = document.querySelectorAll(
-    '.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-circle-grow, .anim-badge-pop'
-  );
-
-  elements.forEach(function (el) {
+  document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
     observer.observe(el);
   });
 

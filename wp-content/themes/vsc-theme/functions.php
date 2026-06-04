@@ -139,7 +139,11 @@ add_action('wp_footer',function(){
 
 	wp_enqueue_script( 'vsc-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), null, true );
 
-	 $is_vc_editor = isset( $_GET['vcv-action'] ) || isset( $_GET['vc_action'] ) || isset( $_GET['vc_editable'] );
+	 $referer      = isset( $_SERVER['HTTP_REFERER'] ) ? $_SERVER['HTTP_REFERER'] : '';
+    $is_vc_editor = strpos( $referer, 'vcv-action=frontend' ) !== false
+                 || strpos( $referer, 'vcv-source-id' ) !== false
+                 || isset( $_GET['vcv-action'] )
+                 || isset( $_GET['vcv-source-id'] );
  
     if ( ! $is_vc_editor ) {
       wp_enqueue_script( 'vsc-animations', get_template_directory_uri() . '/js/animations.js', array(), null, true );
