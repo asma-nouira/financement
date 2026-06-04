@@ -353,26 +353,16 @@ color: #1ea524;
         }
       }
     }
-
-    // ---- État ouvert — VC ajoute vce-faq-toggle--active ----
-    &--active {
-
-       .vce-faq-toggle-state--opened{
-          background-color: $color-secondary;
+.vce-faq-toggle-title.vce-faq-toggle-state--opened {
+   background-color: $color-secondary;
           color: white;
-        } 
-
-      .vce-faq-toggle-title-text::after {
+          &::after {
         content: '−';
         transform: translateY(-50%);
       }
+}
+    // ---- État ouvert — VC ajoute vce-faq-toggle--active ----
 
-      .vce-faq-toggle-text-block {
-        max-height: calc(300vw / 19.2);
-        opacity: 1;
-        padding: 0 calc(28vw / 19.2) calc(20vw / 19.2);
-      }
-    }
   }
 
   @include mobile {

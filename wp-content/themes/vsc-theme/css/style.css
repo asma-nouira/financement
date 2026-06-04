@@ -979,18 +979,13 @@ ul.special-ul li::before {
   color: #FFFFFF;
   text-decoration: underline;
 }
-.section-faq .vce-faq-toggle--active .vce-faq-toggle-state--opened {
+.section-faq .vce-faq-toggle .vce-faq-toggle-title.vce-faq-toggle-state--opened {
   background-color: #976CFF;
   color: white;
 }
-.section-faq .vce-faq-toggle--active .vce-faq-toggle-title-text::after {
+.section-faq .vce-faq-toggle .vce-faq-toggle-title.vce-faq-toggle-state--opened::after {
   content: "−";
   transform: translateY(-50%);
-}
-.section-faq .vce-faq-toggle--active .vce-faq-toggle-text-block {
-  max-height: 15.625vw;
-  opacity: 1;
-  padding: 0 1.4583333333vw 1.0416666667vw;
 }
 @media (max-width: 767px) {
   .section-faq {
