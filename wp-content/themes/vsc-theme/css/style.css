@@ -877,6 +877,12 @@ body .wpcf7-mail-sent-ok {
   height: 10.4166666667vw;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .section-hero__badge {
+    bottom: 20.3125vw;
+    right: 4.1666666667vw;
+  }
+}
 .section-hero__badge-inner {
   position: absolute;
   top: 50%;

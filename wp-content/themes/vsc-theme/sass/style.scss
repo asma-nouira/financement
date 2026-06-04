@@ -89,7 +89,10 @@ color: #1ea524;
     width: calc(200vw / 19.2);
     height: calc(200vw / 19.2);
     text-align: center;
-    
+    @include tablet{
+          bottom: calc(390vw / 19.2);
+    right: calc(80vw / 19.2);
+    }
 	  &-inner {
       position: absolute;
       top: 50%;
