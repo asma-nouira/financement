@@ -65,7 +65,7 @@
   // ---- BOUTONS À DROITE ----
   .header-actions {
     @include flex-center;
-    gap: 19px;
+    gap: calc(19vw / 19.2);
     flex-shrink: 0;
 
     .header-phone {
@@ -171,6 +171,9 @@
 
 @include tablet {
   .site-header {
+    .site-branding{
+      padding-right: 15px;
+    }
     .main-navigation ul {
       gap: 2px;
       padding: 8px 5px;

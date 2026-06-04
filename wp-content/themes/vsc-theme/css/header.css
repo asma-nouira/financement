@@ -303,7 +303,7 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 19px;
+  gap: 0.9895833333vw;
   flex-shrink: 0;
 }
 .site-header .header-actions .header-phone {
@@ -420,6 +420,9 @@ em {
   }
 }
 @media (max-width: 1024px) {
+  .site-header .site-branding {
+    padding-right: 15px;
+  }
   .site-header .main-navigation ul {
     gap: 2px;
     padding: 8px 5px;
