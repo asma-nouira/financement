@@ -284,7 +284,6 @@ em {
 }
 .site-header .main-navigation ul li a {
   color: #FFFFFF;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 6px 9px;
   border-radius: 50px;
@@ -422,17 +421,16 @@ em {
 }
 @media (max-width: 1024px) {
   .site-header .main-navigation ul {
-    gap: 4px;
-    padding: 8px 14px;
+    gap: 2px;
+    padding: 8px 5px;
   }
   .site-header .main-navigation ul li a {
     font-size: 11px;
-    padding: 6px 10px;
   }
   .site-header .header-actions .header-phone,
   .site-header .header-actions .header-contact {
     font-size: 13px;
-    padding: 10px 16px;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=../css/header.css.map */

@@ -40,7 +40,6 @@
       li {
         a {
           color: $color-white;
-          letter-spacing: 0.5px;
           text-transform: uppercase;
           padding: 6px 9px;
           border-radius: 50px;
@@ -172,14 +171,11 @@
 
 @include tablet {
   .site-header {
-
     .main-navigation ul {
-      gap: 4px;
-      padding: 8px 14px;
-
+      gap: 2px;
+      padding: 8px 5px;
       li a {
         font-size: 11px;
-        padding: 6px 10px;
       }
     }
 
@@ -187,7 +183,7 @@
       .header-phone,
       .header-contact {
         font-size: 13px;
-        padding: 10px 16px;
+        padding: 10px;
       }
     }
   }
