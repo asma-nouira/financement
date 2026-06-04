@@ -429,6 +429,7 @@ em {
   }
   .site-header .main-navigation ul li a {
     font-size: 11px;
+    padding: 6px;
   }
   .site-header .header-actions .header-phone,
   .site-header .header-actions .header-contact {
