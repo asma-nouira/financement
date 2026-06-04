@@ -290,6 +290,7 @@ color: #1ea524;
   h2 {
     margin-bottom: calc(40vw / 19.2);
     color:white;
+    padding-right: 4vw;
   }
 
   // ---- Chaque item accordion VC ----
@@ -324,7 +325,7 @@ color: #1ea524;
           top: 50%;
           transform: translateY(-50%);
           font-size: calc(24vw / 19.2);
-          color: $color-white;
+          color: $color-text;
           line-height: 1;
           transition: transform 0.3s ease;
         }

@@ -928,6 +928,7 @@ ul.special-ul li::before {
 .section-faq h2 {
   margin-bottom: 2.0833333333vw;
   color: white;
+  padding-right: 4vw;
 }
 .section-faq .vce-faq-toggle {
   margin-bottom: 1.09375vw;
@@ -957,7 +958,7 @@ ul.special-ul li::before {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.25vw;
-  color: #FFFFFF;
+  color: #000000;
   line-height: 1;
   transition: transform 0.3s ease;
 }
