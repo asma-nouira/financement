@@ -474,12 +474,12 @@ color: #1ea524;
     padding: 50px 30px;
 
     h2 { font-size: 25px; }
-    p  { font-size: 14px; }
+    p  { font-size: 14px; margin-bottom:10px;}
 
     &__buttons {
       flex-direction: column;
       align-items: center;
-      gap: calc(16vw / 7.5);
+      gap: 0;
     }
   }
 }
