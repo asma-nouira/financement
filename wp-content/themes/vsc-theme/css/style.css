@@ -949,7 +949,7 @@ body .wpcf7-mail-sent-ok {
 @media (max-width: 767px) {
   .section-hero {
     flex-direction: column;
-    padding: 40px 30px;
+    padding: 40px 30px 0;
     min-height: auto;
   }
   .section-hero__content {

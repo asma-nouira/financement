@@ -122,7 +122,7 @@ color: #1ea524;
 
   @include mobile {
     flex-direction: column;
-    padding: 40px 30px;
+    padding: 40px 30px 0;
     min-height: auto;
 
     &__content {

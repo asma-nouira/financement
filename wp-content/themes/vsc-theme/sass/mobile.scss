@@ -1,1 +1,12 @@
 @import './statics.scss';
+@media(max-width:767px){
+    .pr-205, .pr-140{
+        padding-right: 30px!important;
+    }
+    .pl-140{
+        padding-left: 30px!important;
+    }
+    .pb-30-mob{
+        padding-bottom: 30px!important;
+    }
+}
