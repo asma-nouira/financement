@@ -1,36 +1,46 @@
 <?php
 /**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
+ * Footer - Financement Sourire
  * @package vsc-theme
  */
-
 ?>
+  </div><!-- #content -->
 
-	</div><!-- #content -->
+  <footer class="site-footer">
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'vsc-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'vsc-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'vsc-theme' ), 'vsc-theme', '<a href="https://virussantecommunication.ca">virus sante communication</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    <div class="site-footer__inner">
+
+      <!-- Logo -->
+      <div class="site-footer__logo">
+        <a href="/"><img src=""></a>
+      </div>
+
+      <!-- Navigation centre -->
+      <nav class="site-footer__nav">
+
+        <ul class="site-footer__nav-col">
+          <li><a href="/a-propos">À PROPOS</a></li>
+          <li><a href="/processus-pour-faire-un-demande">PROCESSUS POUR FAIRE UN DEMANDE</a></li>
+        </ul>
+
+        <ul class="site-footer__nav-col">
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/nous-joindre">CONTACTEZ-NOUS</a></li>
+        </ul>
+
+        <!-- Téléphone sous les liens -->
+        <div class="site-footer__phone-wrap">
+          <a href="tel:5140000000" class="site-footer__phone">(514) 000-0000</a>
+        </div>
+
+      </nav>
+
+    </div><!-- .site-footer__inner -->
+
+  </footer><!-- .site-footer -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

@@ -1,0 +1,110 @@
+// ============================================
+// 8. FOOTER
+// ============================================
+.site-footer {
+  background-color: #0D0D0D;
+  padding: calc(70vw / 19.2) calc(140vw / 19.2);
+ 
+  &__inner {
+    position: relative;
+  }
+ 
+  // Logo en haut à gauche
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    img {
+      height: calc(55vw / 19.2);
+      width: auto;
+    }
+  }
+ 
+  // Nav centré : 2 colonnes + téléphone en dessous
+  &__nav {
+    text-align: center;
+    padding-bottom: calc(10vw / 19.2);
+  }
+ 
+  &__nav-col {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 0 calc(60vw / 19.2);
+ 
+    li {
+      margin-bottom: calc(10vw / 19.2);
+ 
+      a {
+        font-family: 'Inter';
+        font-size: calc(13vw / 19.2);
+        color: rgba(255,255,255,0.75);
+        text-transform: uppercase;
+        letter-spacing: calc(1vw / 19.2);
+        transition: color 0.2s ease;
+ 
+        &:hover { color: $color-white; }
+      }
+    }
+  }
+ 
+  // Bouton téléphone centré sous les liens
+  &__phone-wrap {
+    text-align: center;
+    margin-top: calc(30vw / 19.2);
+  }
+ 
+  &__phone {
+    display: inline-block;
+    border: 1.5px solid $color-white;
+    border-radius: calc(50vw / 19.2);
+    color: $color-white;
+    background: transparent;
+    font-family: 'Inter Bold';
+    font-size: calc(16vw / 19.2);
+    padding: calc(14vw / 19.2) calc(40vw / 19.2);
+    transition: background-color 0.2s ease, color 0.2s ease;
+ 
+    &:hover {
+      background-color: $color-white;
+      color: #0D0D0D;
+    }
+  }
+ 
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+ 
+    &__inner {
+      text-align: center;
+    }
+ 
+    &__logo {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: block;
+      margin-bottom: calc(30vw / 7.5);
+ 
+      img { height: calc(45vw / 7.5); }
+    }
+ 
+    &__nav-col {
+      display: block;
+      margin: 0 0 calc(20vw / 7.5);
+      text-align: center;
+ 
+      li a { font-size: calc(12vw / 7.5); }
+    }
+ 
+    &__phone-wrap {
+      margin-top: calc(20vw / 7.5);
+    }
+ 
+    &__phone {
+      font-size: calc(14vw / 7.5);
+      padding: calc(12vw / 7.5) calc(30vw / 7.5);
+    }
+  }
+}
