@@ -405,11 +405,14 @@ em {
   .site-header .main-navigation ul.toggled {
     display: block;
   }
+  .site-header .main-navigation ul li {
+    border-bottom: 1px solid white;
+  }
   .site-header .main-navigation ul li a {
     display: block;
     text-align: center;
-    padding: 10px 14px;
-    font-size: 14px;
+    padding: 15px 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1024px) {
