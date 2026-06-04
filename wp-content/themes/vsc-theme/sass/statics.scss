@@ -254,3 +254,9 @@ white-space: nowrap;
 .pr-140{
   padding-right: calc(140vw / 19.2);
 }
+.no-desktop{
+  display: none;
+  @media(max-width:768px){
+    display: block;
+  }
+}

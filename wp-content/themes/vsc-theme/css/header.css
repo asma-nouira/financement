@@ -238,6 +238,15 @@ em {
   padding-right: 7.2916666667vw;
 }
 
+.no-desktop {
+  display: none;
+}
+@media (max-width: 768px) {
+  .no-desktop {
+    display: block;
+  }
+}
+
 .site-header {
   display: flex;
   align-items: center;

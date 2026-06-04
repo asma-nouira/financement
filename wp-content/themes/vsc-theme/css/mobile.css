@@ -237,4 +237,13 @@ em {
 .pr-140 {
   padding-right: 7.2916666667vw;
 }
+
+.no-desktop {
+  display: none;
+}
+@media (max-width: 768px) {
+  .no-desktop {
+    display: block;
+  }
+}
 /*# sourceMappingURL=../css/mobile.css.map */
