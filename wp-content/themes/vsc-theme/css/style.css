@@ -672,20 +672,11 @@ em {
   }
 }
 .site-footer {
-  background-color: #0D0D0D;
-  padding: 3.6458333333vw 7.2916666667vw;
+  background-color: balck;
+  padding: 4.6875vw 15.1041666667vw 4.9479166667vw 8.6458333333vw;
 }
 .site-footer__inner {
   position: relative;
-}
-.site-footer__logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.site-footer__logo img {
-  height: 2.8645833333vw;
-  width: auto;
 }
 .site-footer__nav {
   text-align: center;
@@ -703,18 +694,18 @@ em {
 }
 .site-footer__nav-col li a {
   font-family: "Inter";
-  font-size: 0.6770833333vw;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8333333333vw;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 0.0520833333vw;
+  line-height: 1.87;
   transition: color 0.2s ease;
 }
 .site-footer__nav-col li a:hover {
-  color: #FFFFFF;
+  color: #2C114F;
 }
 .site-footer__phone-wrap {
   text-align: center;
-  margin-top: 1.5625vw;
+  margin-top: 1.0416666667vw;
 }
 .site-footer__phone {
   display: inline-block;
@@ -723,8 +714,8 @@ em {
   color: #FFFFFF;
   background: transparent;
   font-family: "Inter Bold";
-  font-size: 0.8333333333vw;
-  padding: 0.7291666667vw 2.0833333333vw;
+  font-size: 0.9375vw;
+  padding: 0.8854166667vw 2.0833333333vw;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .site-footer__phone:hover {
@@ -737,16 +728,6 @@ em {
   }
   .site-footer__inner {
     text-align: center;
-  }
-  .site-footer__logo {
-    position: relative;
-    top: auto;
-    left: auto;
-    display: block;
-    margin-bottom: 4vw;
-  }
-  .site-footer__logo img {
-    height: 6vw;
   }
   .site-footer__nav-col {
     display: block;

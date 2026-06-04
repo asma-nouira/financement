@@ -2,23 +2,11 @@
 // 8. FOOTER
 // ============================================
 .site-footer {
-  background-color: #0D0D0D;
-  padding: calc(70vw / 19.2) calc(140vw / 19.2);
+  background-color: balck;
+  padding: calc(90vw / 19.2) calc(290vw / 19.2) calc(95vw / 19.2) calc(166vw / 19.2);
  
   &__inner {
     position: relative;
-  }
- 
-  // Logo en haut à gauche
-  &__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
- 
-    img {
-      height: calc(55vw / 19.2);
-      width: auto;
-    }
   }
  
   // Nav centré : 2 colonnes + téléphone en dessous
@@ -39,13 +27,13 @@
  
       a {
         font-family: 'Inter';
-        font-size: calc(13vw / 19.2);
-        color: rgba(255,255,255,0.75);
+        font-size: calc(16vw / 19.2);
+        color: white;
         text-transform: uppercase;
-        letter-spacing: calc(1vw / 19.2);
+        line-height: 1.87;
         transition: color 0.2s ease;
  
-        &:hover { color: $color-white; }
+        &:hover { color: $color-primary; }
       }
     }
   }
@@ -53,7 +41,7 @@
   // Bouton téléphone centré sous les liens
   &__phone-wrap {
     text-align: center;
-    margin-top: calc(30vw / 19.2);
+    margin-top: calc(20vw / 19.2);
   }
  
   &__phone {
@@ -63,8 +51,8 @@
     color: $color-white;
     background: transparent;
     font-family: 'Inter Bold';
-    font-size: calc(16vw / 19.2);
-    padding: calc(14vw / 19.2) calc(40vw / 19.2);
+    font-size: calc(18vw / 19.2);
+    padding: calc(17vw / 19.2) calc(40vw / 19.2);
     transition: background-color 0.2s ease, color 0.2s ease;
  
     &:hover {
@@ -78,16 +66,6 @@
  
     &__inner {
       text-align: center;
-    }
- 
-    &__logo {
-      position: relative;
-      top: auto;
-      left: auto;
-      display: block;
-      margin-bottom: calc(30vw / 7.5);
- 
-      img { height: calc(45vw / 7.5); }
     }
  
     &__nav-col {
