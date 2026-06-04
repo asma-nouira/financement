@@ -31,6 +31,9 @@ body{
 	font-size: calc(18vw / 19.2);
 	color:$color-text;
 	line-height: 1.22;
+  @include mobile{
+    font-size: 14px;
+  }
 }
 
 body div.wpcf7-validation-errors {

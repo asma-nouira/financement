@@ -873,6 +873,11 @@ body {
   color: #000000;
   line-height: 1.22;
 }
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 body div.wpcf7-validation-errors {
   background: #ffe2e2;
