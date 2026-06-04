@@ -1048,6 +1048,7 @@ ul.special-ul li::before {
   ul.special-ul li::before {
     width: 9px;
     height: 9px;
+    top: 9px;
   }
 }
 
