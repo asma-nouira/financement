@@ -1,53 +1,83 @@
 /**
  * Animations au scroll - Financement Sourire
- * Désactivé automatiquement dans l'éditeur Visual Composer
  */
-document.addEventListener('DOMContentLoaded', function () {
 
-  var ANIM_SELECTOR = '.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-in, .anim-circle-grow, .anim-badge-pop';
+// Détection immédiate de l'éditeur VC — avant même le DOMContentLoaded
+// VC injecte window.vcv et window.VCV_WP_NONCE dans son iframe
+var IS_VC_EDITOR = (
+     typeof window.vcv !== 'undefined'
+  || typeof window.VCV_WP_NONCE !== 'undefined'
+  || typeof window.vcvSourceUrl !== 'undefined'
+);
 
-  // VC charge le frontend dans une iframe
-  // Il injecte window.vcv, window.VCV_WP_NONCE et des classes sur le body
-  var isVCEditor = typeof window.vcv !== 'undefined'
-                || typeof window.VCV_WP_NONCE !== 'undefined'
-                || document.body.classList.contains('vcv-is-editor-opened')
-                || document.querySelector('.vcv-layout') !== null
-                || document.querySelector('[data-vcv-element]') !== null;
+var ANIM_SELECTOR = [
+  '.anim-fade-up',
+  '.anim-fade-left',
+  '.anim-fade-right',
+  '.anim-scale-in',
+  '.anim-circle-grow',
+  '.anim-badge-pop'
+].join(', ');
 
-  // Forcer tous les éléments visibles dans l'éditeur
-  if (isVCEditor) {
-    document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
-      el.classList.add('is-visible');
-    });
+// Fonction : rendre tous les éléments visibles immédiatement
+function showAll() {
+  document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
+    el.style.opacity  = '1';
+    el.style.transform = 'none';
+    el.classList.add('is-visible');
+  });
+}
+console.log(IS_VC_EDITOR);
+// ---- MODE ÉDITEUR VC ----
+if (IS_VC_EDITOR) {
 
-    // VC peut ajouter des éléments dynamiquement, on observe les nouveaux
-    var mutationObserver = new MutationObserver(function () {
-      document.querySelectorAll(ANIM_SELECTOR + ':not(.is-visible)').forEach(function (el) {
-        el.classList.add('is-visible');
-      });
-    });
-    mutationObserver.observe(document.body, { childList: true, subtree: true });
-    return;
+  // Appliquer dès que le DOM est prêt
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showAll);
+  } else {
+    showAll();
   }
 
-  // Désactiver si prefers-reduced-motion
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  // IntersectionObserver pour le frontend normal
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
+  // Observer les éléments ajoutés dynamiquement par VC (drag & drop)
+  var mutationObs = new MutationObserver(function () {
+    document.querySelectorAll(ANIM_SELECTOR + ':not(.is-visible)').forEach(function (el) {
+      el.style.opacity   = '1';
+      el.style.transform = 'none';
+      el.classList.add('is-visible');
     });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
   });
 
-  document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
-    observer.observe(el);
+  document.addEventListener('DOMContentLoaded', function () {
+    mutationObs.observe(document.body, { childList: true, subtree: true });
   });
 
-});
+// ---- MODE FRONTEND NORMAL ----
+} else {
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Respecter prefers-reduced-motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      showAll();
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll(ANIM_SELECTOR).forEach(function (el) {
+      observer.observe(el);
+    });
+
+  });
+
+}
