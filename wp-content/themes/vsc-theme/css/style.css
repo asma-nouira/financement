@@ -974,8 +974,10 @@ body .wpcf7-mail-sent-ok {
     max-width: 100%;
   }
   .section-hero__badge {
-    bottom: 310px !important;
-    right: 120px !important;
+    bottom: 280px !important;
+    right: 80px !important;
+    width: 120px;
+    height: 120px;
   }
   .section-hero__badge span.uppercase, .section-hero__badge .min-span, .section-hero__badge strong {
     font-size: 11px;
