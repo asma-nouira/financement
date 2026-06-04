@@ -174,7 +174,9 @@
     .site-branding{
       padding-right: 15px;
     }
-    .main-navigation ul {
+    .main-navigation
+    { padding-right: 10px;
+      ul {
       gap: 2px;
       padding: 8px 5px;
       li a {
@@ -182,7 +184,7 @@
         padding: 6px;
       }
     }
-
+  }
     .header-actions {
       .header-phone,
       .header-contact {
