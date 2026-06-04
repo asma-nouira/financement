@@ -145,13 +145,13 @@
         margin-top: 8px;
         
         position: absolute;
-        top: calc(100% + 8px); // juste en dessous du bouton
+        top: 75%; // juste en dessous du bouton
         right: 0;
-        width: calc(300vw / 7.5);
+        width: calc(100% - 28px);
         z-index: 100;
         box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 
-        &.toggled { display: flex; }
+        &.toggled { display: block; }
 
         li a {
           display: block;
