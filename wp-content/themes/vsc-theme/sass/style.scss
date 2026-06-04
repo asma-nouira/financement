@@ -127,8 +127,8 @@ color: #1ea524;
 
     &__content {
       max-width: 100%;
-      h1 { font-size: calc(36vw / 7.5); margin-top: 0!important;}
-      p  { font-size: calc(14vw / 7.5); padding-right: 0;}
+      h1 { font-size: 35px; margin-top: 0!important;}
+      p  { font-size: 14px; padding-right: 0;}
     }
 
     &__image {
@@ -138,13 +138,7 @@ color: #1ea524;
       img { max-width: 100%; }
     }
        &__badge {
-        bottom: 280px!important;
-        right: 80px!important;
-        width: 120px;
-        height: 120px;
-         span.uppercase, .min-span, strong {
-          font-size: 11px;
-         }
+      display: none;
     }
     
   }

@@ -966,11 +966,11 @@ body .wpcf7-mail-sent-ok {
     max-width: 100%;
   }
   .section-hero__content h1 {
-    font-size: 4.8vw;
+    font-size: 35px;
     margin-top: 0 !important;
   }
   .section-hero__content p {
-    font-size: 1.8666666667vw;
+    font-size: 14px;
     padding-right: 0;
   }
   .section-hero__image {
@@ -984,13 +984,7 @@ body .wpcf7-mail-sent-ok {
     max-width: 100%;
   }
   .section-hero__badge {
-    bottom: 280px !important;
-    right: 80px !important;
-    width: 120px;
-    height: 120px;
-  }
-  .section-hero__badge span.uppercase, .section-hero__badge .min-span, .section-hero__badge strong {
-    font-size: 11px;
+    display: none;
   }
 }
 
