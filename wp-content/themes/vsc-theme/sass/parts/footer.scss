@@ -92,15 +92,18 @@
     }
   }
    &__bottom {
-      margin-top: calc(30vw / 7.5);
-      padding-top: calc(16vw / 7.5);
- 
+      padding: calc(40vw / 19.2) calc(140vw / 19.2);
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
       .site-footer__copyright,
       .site-footer__policy,
       .site-footer__credit {
         display: block;
-        font-size: calc(11vw / 7.5);
-        margin-bottom: calc(8vw / 7.5);
+      }
+      a:hover{
+        text-decoration: underline;
+        color:$color-primary;
       }
     }
 }

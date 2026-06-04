@@ -754,15 +754,19 @@ em {
   }
 }
 .site-footer__bottom {
-  margin-top: 4vw;
-  padding-top: 2.1333333333vw;
+  padding: 2.0833333333vw 7.2916666667vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .site-footer__bottom .site-footer__copyright,
 .site-footer__bottom .site-footer__policy,
 .site-footer__bottom .site-footer__credit {
   display: block;
-  font-size: 1.4666666667vw;
-  margin-bottom: 1.0666666667vw;
+}
+.site-footer__bottom a:hover {
+  text-decoration: underline;
+  color: #2C114F;
 }
 
 /**************/
