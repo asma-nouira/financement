@@ -356,9 +356,13 @@ color: #1ea524;
 .vce-faq-toggle-title.vce-faq-toggle-state--opened {
    background-color: $color-secondary;
           color: white;
+.vce-faq-toggle-title-text{
+   color: white;
+}
           .vce-faq-toggle-title-text::after {
         content: '−';
         transform: translateY(-50%);
+        color:white;
       }
 }
     // ---- État ouvert — VC ajoute vce-faq-toggle--active ----
