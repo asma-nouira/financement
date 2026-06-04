@@ -983,7 +983,7 @@ ul.special-ul li::before {
   background-color: #976CFF;
   color: white;
 }
-.section-faq .vce-faq-toggle .vce-faq-toggle-title.vce-faq-toggle-state--opened::after {
+.section-faq .vce-faq-toggle .vce-faq-toggle-title.vce-faq-toggle-state--opened .vce-faq-toggle-title-text::after {
   content: "−";
   transform: translateY(-50%);
 }
