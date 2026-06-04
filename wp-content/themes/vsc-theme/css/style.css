@@ -127,8 +127,9 @@ ul {
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
   background-color: transparent;
-  color: #2C114F;
-  border: 2px solid #2C114F;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 1.09375vw 3.125vw;
 }
 .btn-outline:hover {
   opacity: 0.88;
@@ -366,8 +367,9 @@ ul {
   transition: opacity 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
   background-color: transparent;
-  color: #2C114F;
-  border: 2px solid #2C114F;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 1.09375vw 3.125vw;
 }
 .btn-outline:hover {
   opacity: 0.88;

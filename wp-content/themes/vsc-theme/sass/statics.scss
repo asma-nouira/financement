@@ -156,8 +156,9 @@ ul {
 .btn-outline {
   @include btn-base;
   background-color: transparent;
-  color: $color-primary;
-  border: 2px solid $color-primary;
+  color: $color-text;
+  border: 2px solid $color-text;
+   padding: calc(21vw / 19.2) calc(60vw / 19.2);
   &:hover {
     background-color: $color-primary;
     color: $color-white;
