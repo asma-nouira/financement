@@ -799,13 +799,22 @@ em {
   .site-footer {
     padding: 50px 30px;
   }
+  .site-footer__inner {
+    display: block;
+  }
   .site-footer__nav {
     width: 100%;
+    display: block;
   }
   .site-footer__nav-col {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
     margin: 0 0 20px;
-    text-align: center;
+    text-align: left;
+  }
+  .site-footer__nav-col.first {
+    padding-right: 0;
   }
   .site-footer__nav-col li a {
     font-size: 14px;
