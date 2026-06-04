@@ -36,7 +36,22 @@
       </nav>
 
     </div><!-- .site-footer__inner -->
-
+ <!-- Barre bas : copyright + politique + signature -->
+    <div class="site-footer__bottom">
+ 
+      <span class="site-footer__copyright">
+        &copy; <?php echo date('Y'); ?> Financement Sourire. Tous droits réservés.
+      </span>
+ 
+      <a href="/politique-de-confidentialite" class="site-footer__policy">
+        Politique de confidentialité
+      </a>
+ 
+      <span class="site-footer__credit">
+        Conception web par <a href="https://virussantecommunication.com" target="_blank" rel="noopener">Virus Santé Communication</a>
+      </span>
+ 
+    </div><!-- .site-footer__bottom -->
   </footer><!-- .site-footer -->
 
 </div><!-- #page -->
