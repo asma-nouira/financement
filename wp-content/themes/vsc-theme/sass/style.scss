@@ -251,13 +251,32 @@ color: #1ea524;
 
   @include mobile {
     padding: 50px 30px;
+    .section-comment {
+  &__top {
+    margin-bottom: 30px;
 
+    &-left {
+      h2 {
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
 
+    &-right {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+    }
     &__card {
       &-body {
         h3 { font-size: 18px; }
         p  { font-size: 14px; }
       }
+      
     }
   }
 }

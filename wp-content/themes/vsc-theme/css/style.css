@@ -1087,6 +1087,18 @@ ul.special-ul li::before {
   .section-comment {
     padding: 50px 30px;
   }
+  .section-comment .section-comment__top {
+    margin-bottom: 30px;
+  }
+  .section-comment .section-comment__top-left h2 {
+    margin-bottom: 15px;
+  }
+  .section-comment .section-comment__top-left p {
+    font-size: 18px;
+  }
+  .section-comment .section-comment__top-right p {
+    font-size: 18px;
+  }
   .section-comment__card-body h3 {
     font-size: 18px;
   }
