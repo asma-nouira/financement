@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isOpen) {
       menu.classList.remove('toggled');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰ Menu';
+      toggle.textContent = '☰';
     } else {
       menu.classList.add('toggled');
       toggle.setAttribute('aria-expanded', 'true');
-      toggle.textContent = '✕ Fermer';
+      toggle.textContent = '✕';
     }
   });
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!e.target.closest('.main-navigation')) {
       menu.classList.remove('toggled');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰ Menu';
+      toggle.textContent = '☰';
     }
   });
 
