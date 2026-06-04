@@ -797,7 +797,7 @@ em {
 }
 @media (max-width: 767px) {
   .site-footer {
-    padding: 6.6666666667vw 4vw;
+    padding: 50px 30px;
   }
   .site-footer__inner {
     text-align: center;
@@ -807,18 +807,18 @@ em {
   }
   .site-footer__nav-col {
     display: block;
-    margin: 0 0 2.6666666667vw;
+    margin: 0 0 20px;
     text-align: center;
   }
   .site-footer__nav-col li a {
-    font-size: 1.6vw;
+    font-size: 14px;
   }
   .site-footer__phone-wrap {
     margin-top: 2.6666666667vw;
   }
   .site-footer__phone {
-    font-size: 1.8666666667vw;
-    padding: 1.6vw 4vw;
+    font-size: 14px;
+    padding: 14px 30px;
   }
 }
 .site-footer__bottom {
@@ -836,6 +836,12 @@ em {
 .site-footer__bottom a:hover {
   text-decoration: underline;
   color: #2C114F;
+}
+@media (max-width: 767px) {
+  .site-footer__bottom {
+    padding: 40px;
+    display: block;
+  }
 }
 
 /**************/

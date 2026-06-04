@@ -66,7 +66,7 @@
   }
  
   @include mobile {
-    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+    padding: 50px 30px;
  
     &__inner {
       text-align: center;
@@ -76,10 +76,10 @@
     }
     &__nav-col {
       display: block;
-      margin: 0 0 calc(20vw / 7.5);
+      margin: 0 0 20px;
       text-align: center;
  
-      li a { font-size: calc(12vw / 7.5); }
+      li a { font-size: 14px; }
     }
  
     &__phone-wrap {
@@ -87,8 +87,8 @@
     }
  
     &__phone {
-      font-size: calc(14vw / 7.5);
-      padding: calc(12vw / 7.5) calc(30vw / 7.5);
+      font-size: 14px;
+      padding: 14px 30px;
     }
   }
    &__bottom {
@@ -105,6 +105,10 @@
       a:hover{
         text-decoration: underline;
         color:$color-primary;
+      }
+      @include mobile {
+        padding: 40px;
+        display: block;
       }
     }
 }
