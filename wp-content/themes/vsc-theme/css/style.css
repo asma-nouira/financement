@@ -1099,8 +1099,15 @@ ul.special-ul li::before {
   .section-comment .section-comment__top-right p {
     font-size: 18px;
   }
+  .section-comment__card {
+    margin-bottom: 20px;
+  }
+  .section-comment__card-body {
+    padding: 15px;
+  }
   .section-comment__card-body h3 {
     font-size: 18px;
+    padding-bottom: 15px;
   }
   .section-comment__card-body p {
     font-size: 14px;
