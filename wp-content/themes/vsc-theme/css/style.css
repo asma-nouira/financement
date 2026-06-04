@@ -672,7 +672,7 @@ em {
   }
 }
 .site-footer {
-  background-color: balck;
+  background-color: black;
   padding: 4.6875vw 15.1041666667vw 4.9479166667vw 8.6458333333vw;
 }
 .site-footer__inner {
@@ -704,7 +704,7 @@ em {
   color: #2C114F;
 }
 .site-footer__phone-wrap {
-  text-align: center;
+  text-align: left;
   margin-top: 1.0416666667vw;
 }
 .site-footer__phone {

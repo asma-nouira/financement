@@ -2,7 +2,7 @@
 // 8. FOOTER
 // ============================================
 .site-footer {
-  background-color: balck;
+  background-color: black;
   padding: calc(90vw / 19.2) calc(290vw / 19.2) calc(95vw / 19.2) calc(166vw / 19.2);
  
   &__inner {
@@ -40,7 +40,7 @@
  
   // Bouton téléphone centré sous les liens
   &__phone-wrap {
-    text-align: center;
+  text-align: left;
     margin-top: calc(20vw / 19.2);
   }
  
