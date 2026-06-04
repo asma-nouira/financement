@@ -683,14 +683,15 @@ em {
 .site-footer__nav {
   text-align: center;
   padding-bottom: 0.5208333333vw;
-  display: flex;
-  gap: 65px;
 }
 .site-footer__nav-col {
   list-style: none;
   display: inline-block;
   vertical-align: top;
   text-align: left;
+}
+.site-footer__nav-col.first {
+  padding-left: 3.3854166667vw;
 }
 .site-footer__nav-col li {
   margin-bottom: 0.5208333333vw;

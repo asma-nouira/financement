@@ -15,8 +15,6 @@
   &__nav {
     text-align: center;
     padding-bottom: calc(10vw / 19.2);
-    display: flex;
-    gap:65px;
   }
  
   &__nav-col {
@@ -24,7 +22,9 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
- 
+     &.first{
+        padding-left: calc(65vw / 19.2);
+     }
     li {
       margin-bottom: calc(10vw / 19.2);
  
