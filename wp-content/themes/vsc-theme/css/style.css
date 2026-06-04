@@ -802,6 +802,9 @@ em {
   .site-footer__inner {
     display: block;
   }
+  .site-footer__logo {
+    padding-bottom: 15px;
+  }
   .site-footer__nav {
     width: 100%;
     display: block;
