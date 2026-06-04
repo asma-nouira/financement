@@ -1225,15 +1225,25 @@ ul.special-ul li::before {
   }
   .section-faq h2 {
     font-size: 25px;
+    padding-bottom: 25px;
+  }
+  .section-faq .vce-faq-toggle {
+    margin-bottom: 15px;
   }
   .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text {
     font-size: 14px;
     padding: 14px 20px;
-    padding-right: 30px;
+    padding-right: 40px;
   }
   .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text::after {
     font-size: 16px;
     right: 20px;
+  }
+  .section-faq .vce-faq-toggle .vce-faq-toggle-text-block {
+    padding: 15px;
+  }
+  .section-faq .vce-faq-toggle .vce-faq-toggle-text-block p {
+    font-size: 14px;
   }
   .section-faq .vce-faq-toggle-text-block p {
     font-size: 1.7333333333vw;

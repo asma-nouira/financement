@@ -419,17 +419,24 @@ color: #1ea524;
   @include mobile {
     padding: 50px 30px;
 
-    h2 { font-size: 25px }
+    h2 { font-size: 25px; padding-bottom: 25px; }
 
     .vce-faq-toggle {
+      margin-bottom:15px;
       &-title .vce-faq-toggle-title-text {
         font-size: 14px;
         padding: 14px 20px;
-        padding-right: 30px;
+        padding-right: 40px;
 
         &::after {
           font-size: 16px;
           right: 20px;
+        }
+      }
+      .vce-faq-toggle-text-block{
+        padding: 15px;
+        p{
+          font-size: 14px;
         }
       }
 
