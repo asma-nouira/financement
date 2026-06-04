@@ -934,14 +934,13 @@ ul.special-ul li::before {
   margin-bottom: 1.09375vw;
 }
 .section-faq .vce-faq-toggle-wrapper {
-  background-color: white !important;
-  border-radius: 1.8229166667vw !important;
-  overflow: hidden;
   transition: background-color 0.3s ease, border-color 0.3s ease, border-radius 0.3s ease;
 }
 .section-faq .vce-faq-toggle-title {
   cursor: pointer;
-  padding-right: 0;
+  padding-left: 0;
+  background-color: white;
+  border-radius: 35px;
 }
 .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text {
   font-family: "Inter Bold";
@@ -980,8 +979,9 @@ ul.special-ul li::before {
   color: #FFFFFF;
   text-decoration: underline;
 }
-.section-faq .vce-faq-toggle--active .vce-faq-toggle-wrapper {
-  background-color: #976CFF !important;
+.section-faq .vce-faq-toggle--active .vce-faq-toggle-state--opened {
+  background-color: #976CFF;
+  color: white;
 }
 .section-faq .vce-faq-toggle--active .vce-faq-toggle-title-text::after {
   content: "−";
