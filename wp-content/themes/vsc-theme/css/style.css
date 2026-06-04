@@ -927,6 +927,7 @@ ul.special-ul li::before {
 }
 .section-faq h2 {
   margin-bottom: 2.0833333333vw;
+  color: white;
 }
 .section-faq .vce-faq-toggle {
   margin-bottom: 1.09375vw;
