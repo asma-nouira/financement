@@ -1138,6 +1138,7 @@ ul.special-ul li::before {
 @media (max-width: 767px) {
   .section-soutien__content h2 {
     font-size: 20px;
+    margin-bottom: 15px;
   }
   .section-soutien__content p {
     font-size: 14px;
