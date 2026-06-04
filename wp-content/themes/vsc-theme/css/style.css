@@ -983,7 +983,7 @@ body .wpcf7-mail-sent-ok {
 @media (max-width: 767px) {
   .section-hero {
     flex-direction: column;
-    padding: 40px 30px 0;
+    padding: 40px 25px 0;
     min-height: auto;
   }
   .section-hero__content {
@@ -1025,7 +1025,7 @@ body .wpcf7-mail-sent-ok {
 }
 @media (max-width: 767px) {
   .section-objectif {
-    padding: 40px 30px;
+    padding: 40px 25px;
   }
   .section-objectif p {
     font-size: 18px;
@@ -1104,7 +1104,7 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .section-comment {
-    padding: 50px 30px;
+    padding: 50px 25px;
   }
   .section-comment .section-comment__top {
     margin-bottom: 30px;
@@ -1240,7 +1240,7 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .section-faq {
-    padding: 50px 30px;
+    padding: 50px 25px;
   }
   .section-faq h2 {
     font-size: 25px;
@@ -1289,7 +1289,7 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .section-cta {
-    padding: 50px 30px;
+    padding: 50px 25px;
   }
   .section-cta h2 {
     font-size: 25px;
