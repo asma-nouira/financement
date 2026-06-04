@@ -417,19 +417,19 @@ color: #1ea524;
   }
 
   @include mobile {
-    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+    padding: 50px 30px;
 
-    h2 { font-size: calc(30vw / 7.5); }
+    h2 { font-size: 25px }
 
     .vce-faq-toggle {
       &-title .vce-faq-toggle-title-text {
-        font-size: calc(14vw / 7.5);
-        padding: calc(14vw / 7.5) calc(20vw / 7.5);
-        padding-right: calc(50vw / 7.5);
+        font-size: 14px;
+        padding: 14px 20px;
+        padding-right: 30px;
 
         &::after {
-          font-size: calc(18vw / 7.5);
-          right: calc(20vw / 7.5);
+          font-size: 16px;
+          right: 20px;
         }
       }
 
