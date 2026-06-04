@@ -316,8 +316,13 @@ color: #1ea524;
 
 
     &__content {
-      h2 { font-size: calc(28vw / 7.5); }
-      p  { font-size: calc(14vw / 7.5); }
+      h2 { font-size: 20px; }
+      p  { font-size: 14px; }
+      .btn-primary{
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 16px 20px;
+      }
     }
   }
 }
