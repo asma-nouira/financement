@@ -7,12 +7,16 @@
  
   &__inner {
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
  
   // Nav centré : 2 colonnes + téléphone en dessous
   &__nav {
     text-align: center;
     padding-bottom: calc(10vw / 19.2);
+    display: flex;
+    gap:65px;
   }
  
   &__nav-col {
@@ -20,7 +24,6 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 0 calc(60vw / 19.2);
  
     li {
       margin-bottom: calc(10vw / 19.2);

@@ -677,17 +677,20 @@ em {
 }
 .site-footer__inner {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .site-footer__nav {
   text-align: center;
   padding-bottom: 0.5208333333vw;
+  display: flex;
+  gap: 65px;
 }
 .site-footer__nav-col {
   list-style: none;
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  margin: 0 3.125vw;
 }
 .site-footer__nav-col li {
   margin-bottom: 0.5208333333vw;
