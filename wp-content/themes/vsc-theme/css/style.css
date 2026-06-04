@@ -973,6 +973,10 @@ body .wpcf7-mail-sent-ok {
   .section-hero__image img {
     max-width: 100%;
   }
+  .section-hero__badge {
+    bottom: 310px !important;
+    right: 120px !important;
+  }
 }
 
 .section-objectif {

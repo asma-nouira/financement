@@ -137,7 +137,10 @@ color: #1ea524;
       &::before { display: none; }
       img { max-width: 100%; }
     }
-
+       &__badge {
+        bottom: 310px!important;
+        right: 120px!important;
+    }
     
   }
 }
