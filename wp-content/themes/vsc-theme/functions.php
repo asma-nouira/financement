@@ -141,17 +141,17 @@ add_action('wp_footer',function(){
 	wp_enqueue_script( 'vsc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), null, true );
 
 	wp_enqueue_script( 'vsc-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), null, true );
-	 $is_vc_editor = isset( $_GET['action'] = 'edit' ) );
-	 echo($is_vc_editor);
-	  if ( ! $is_vc_editor ) {
-	  wp_enqueue_script( 'vsc-animations', get_template_directory_uri() . '/js/animations.js', array(), null, true );
-	  }
-	  else {
+	 $is_vc_editor = isset( $_GET['vcv-action'] ) || isset( $_GET['vc_action'] ) || isset( $_GET['vc_editable'] );
+ 
+    if ( ! $is_vc_editor ) {
+      wp_enqueue_script( 'vsc-animations', get_template_directory_uri() . '/js/animations.js', array(), null, true );
+    } else {
       // En mode éditeur : ajouter une classe au body pour forcer la visibilité via CSS
       add_filter( 'body_class', function( $classes ) {
         $classes[] = 'vc-editor-mode';
         return $classes;
       });
+    }
     }
 	///////////// slick slider JS ///////////
 	// wp_enqueue_script( 'vsc-slick-js', get_template_directory_uri() . '/slick-slider/slick.min.js', array('jquery'), null, true );
