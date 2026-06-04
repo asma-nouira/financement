@@ -369,15 +369,7 @@ em {
     width: auto;
   }
   .site-header .header-actions {
-    gap: 8px;
-  }
-  .site-header .header-actions .header-phone {
-    font-size: 13px;
-    padding: 10px 14px;
-  }
-  .site-header .header-actions .header-contact {
-    font-size: 13px;
-    padding: 9px 14px;
+    display: none !important;
   }
   .site-header .main-navigation {
     width: 100%;
