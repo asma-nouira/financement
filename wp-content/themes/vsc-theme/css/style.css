@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .full-width .vce.vce-single-image-wrapper {
   width: 100%;
   height: auto;
@@ -918,6 +919,97 @@ ul.special-ul li::before {
   }
   .section-soutien__content p {
     font-size: 1.8666666667vw;
+  }
+}
+
+.section-faq {
+  padding: 6.7708333333vw 6.09375vw 6.25vw 8.6458333333vw;
+}
+.section-faq h2 {
+  margin-bottom: 2.0833333333vw;
+}
+.section-faq .vce-faq-toggle {
+  margin-bottom: 1.09375vw;
+}
+.section-faq .vce-faq-toggle-wrapper {
+  background-color: white !important;
+  border-radius: 1.8229166667vw !important;
+  overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease, border-radius 0.3s ease;
+}
+.section-faq .vce-faq-toggle-title {
+  cursor: pointer;
+}
+.section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text {
+  font-family: "Inter Bold";
+  font-size: 1.25vw;
+  color: #000000;
+  padding: 1.0416666667vw 2.9166666667vw;
+  margin: 0;
+  position: relative;
+  padding-right: 3.125vw;
+}
+.section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text::after {
+  content: "+";
+  position: absolute;
+  right: 3.125vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+.section-faq .vce-faq-toggle-title .vce-faq-toggle-icon {
+  display: none;
+}
+.section-faq .vce-faq-toggle-text-block {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1.4583333333vw;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+.section-faq .vce-faq-toggle-text-block p {
+  font-family: "Inter";
+  font-size: 1.0416666667vw;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+.section-faq .vce-faq-toggle-text-block p a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.section-faq .vce-faq-toggle--active .vce-faq-toggle-wrapper {
+  background-color: #976CFF !important;
+}
+.section-faq .vce-faq-toggle--active .vce-faq-toggle-title-text::after {
+  content: "−";
+  transform: translateY(-50%);
+}
+.section-faq .vce-faq-toggle--active .vce-faq-toggle-text-block {
+  max-height: 15.625vw;
+  opacity: 1;
+  padding: 0 1.4583333333vw 1.0416666667vw;
+}
+@media (max-width: 767px) {
+  .section-faq {
+    padding: 6.6666666667vw 4vw;
+  }
+  .section-faq h2 {
+    font-size: 4vw;
+  }
+  .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text {
+    font-size: 1.8666666667vw;
+    padding: 1.8666666667vw 2.6666666667vw;
+    padding-right: 6.6666666667vw;
+  }
+  .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text::after {
+    font-size: 2.4vw;
+    right: 2.6666666667vw;
+  }
+  .section-faq .vce-faq-toggle-text-block p {
+    font-size: 1.7333333333vw;
   }
 }
 /*# sourceMappingURL=../css/style.css.map */

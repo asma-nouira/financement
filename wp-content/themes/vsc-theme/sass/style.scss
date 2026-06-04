@@ -280,6 +280,125 @@ color: #1ea524;
   }
 }
 
+// ============================================
+// 6. FAQ - fond violet foncé (Visual Composer)
+// Classes VC : vce-faq-toggle, vce-faq-toggle-title,
+//              vce-faq-toggle-text-block, vce-faq-toggle-icon
+// ============================================
+.section-faq {
+  padding: calc(130vw / 19.2) calc(117vw / 19.2) calc(120vw / 19.2) calc(166vw / 19.2);
+  h2 {
+    margin-bottom: calc(40vw / 19.2);
+  }
+
+  // ---- Chaque item accordion VC ----
+  .vce-faq-toggle {
+    margin-bottom: calc(21vw / 19.2);
+
+    &-wrapper {
+      background-color: white !important;
+      border-radius: calc(35vw / 19.2) !important;
+      overflow: hidden;
+      transition: background-color 0.3s ease, border-color 0.3s ease, border-radius 0.3s ease;
+    }
+
+    // ---- Titre cliquable ----
+    &-title {
+      cursor: pointer;
+
+      .vce-faq-toggle-title-text {
+        font-family: 'Inter Bold';
+        font-size: calc(24vw / 19.2);
+        color: $color-text;
+        padding: calc(20vw / 19.2) calc(56vw / 19.2);
+        margin: 0;
+        position: relative;
+        padding-right: calc(60vw / 19.2); // espace pour l'icône
+
+        // Icône +/- via pseudo-element (remplace vce-faq-toggle-icon)
+        &::after {
+          content: '+';
+          position: absolute;
+          right: calc(60vw / 19.2);
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: calc(24vw / 19.2);
+          color: $color-white;
+          line-height: 1;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      // Cacher l'icône native VC
+      .vce-faq-toggle-icon {
+        display: none;
+      }
+    }
+
+    // ---- Contenu texte caché ----
+    &-text-block {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      padding: 0 calc(28vw / 19.2);
+      transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+
+      p {
+        font-family: 'Inter';
+        font-size: calc(20vw / 19.2);
+        color: $color-white;
+        line-height: 1.6;
+
+        a {
+          color: $color-white;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    // ---- État ouvert — VC ajoute vce-faq-toggle--active ----
+    &--active {
+
+      .vce-faq-toggle-wrapper {
+        background-color: $color-secondary !important;
+      }
+
+      .vce-faq-toggle-title-text::after {
+        content: '−';
+        transform: translateY(-50%);
+      }
+
+      .vce-faq-toggle-text-block {
+        max-height: calc(300vw / 19.2);
+        opacity: 1;
+        padding: 0 calc(28vw / 19.2) calc(20vw / 19.2);
+      }
+    }
+  }
+
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+
+    h2 { font-size: calc(30vw / 7.5); }
+
+    .vce-faq-toggle {
+      &-title .vce-faq-toggle-title-text {
+        font-size: calc(14vw / 7.5);
+        padding: calc(14vw / 7.5) calc(20vw / 7.5);
+        padding-right: calc(50vw / 7.5);
+
+        &::after {
+          font-size: calc(18vw / 7.5);
+          right: calc(20vw / 7.5);
+        }
+      }
+
+      &-text-block p {
+        font-size: calc(13vw / 7.5);
+      }
+    }
+  }
+}
 
 
 
