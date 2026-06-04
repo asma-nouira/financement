@@ -681,8 +681,9 @@ em {
   justify-content: space-between;
 }
 .site-footer__nav {
-  text-align: center;
+  text-align: left;
   padding-bottom: 0.5208333333vw;
+  width: 42%;
 }
 .site-footer__nav-col {
   list-style: none;
@@ -732,6 +733,9 @@ em {
   }
   .site-footer__inner {
     text-align: center;
+  }
+  .site-footer__nav {
+    width: 100%;
   }
   .site-footer__nav-col {
     display: block;
