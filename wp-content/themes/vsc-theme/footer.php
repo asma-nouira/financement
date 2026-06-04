@@ -36,7 +36,9 @@
       </nav>
 
     </div><!-- .site-footer__inner -->
- <!-- Barre bas : copyright + politique + signature -->
+ 
+  </footer><!-- .site-footer -->
+<!-- Barre bas : copyright + politique + signature -->
     <div class="site-footer__bottom">
  
       <span class="site-footer__copyright">
@@ -52,8 +54,6 @@
       </span>
  
     </div><!-- .site-footer__bottom -->
-  </footer><!-- .site-footer -->
-
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
