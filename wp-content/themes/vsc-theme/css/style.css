@@ -949,7 +949,7 @@ body .wpcf7-mail-sent-ok {
 @media (max-width: 767px) {
   .section-hero {
     flex-direction: column;
-    padding: 5.3333333333vw 4vw;
+    padding: 40px 30px;
     min-height: auto;
   }
   .section-hero__content {
@@ -961,6 +961,7 @@ body .wpcf7-mail-sent-ok {
   }
   .section-hero__content p {
     font-size: 1.8666666667vw;
+    padding-right: 0;
   }
   .section-hero__image {
     width: 100%;

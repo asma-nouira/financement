@@ -122,13 +122,13 @@ color: #1ea524;
 
   @include mobile {
     flex-direction: column;
-    padding: calc(40vw / 7.5) calc(30vw / 7.5);
+    padding: 40px 30px;
     min-height: auto;
 
     &__content {
       max-width: 100%;
       h1 { font-size: calc(36vw / 7.5); margin-top: 0!important;}
-      p  { font-size: calc(14vw / 7.5); }
+      p  { font-size: calc(14vw / 7.5); padding-right: 0;}
     }
 
     &__image {
