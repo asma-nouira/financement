@@ -370,6 +370,7 @@ em {
   .site-header .site-branding a img {
     height: 55px;
     width: auto;
+    max-width: 100;
   }
   .site-header .header-actions {
     display: none !important;
