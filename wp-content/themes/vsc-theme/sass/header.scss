@@ -109,7 +109,7 @@
     gap: 12px;
 
     .site-branding {
-      a img { height: 40px; width:auto; }
+      a img { height: 55px; width:auto; }
     }
 
     // Boutons visibles en haut à droite sur mobile
@@ -121,19 +121,19 @@
     .main-navigation {
       width: 100%;
       order: 3;
+      justify-content: end!important;
 
       .menu-toggle {
         display: block;
-        width: 100%;
+        width: 30%;
         background: $color-secondary;
         color: $color-white;
         border: none;
         padding: 12px;
         border-radius: 8px;
         font-size: 14px;
-        font-weight: 600;
         cursor: pointer;
-        text-align: left;
+        text-align: center;
       }
 
       ul {
