@@ -124,6 +124,9 @@ h2{
   font-size: calc(45vw / 19.2);
   line-height: 1.11;
   color:black;
+  @include mobile{
+    font-size: 25px;
+  }
 
 }
 h3{
