@@ -917,6 +917,7 @@ body .wpcf7-mail-sent-ok {
   }
   .section-hero__content h1 {
     font-size: 4.8vw;
+    margin-top: 0 !important;
   }
   .section-hero__content p {
     font-size: 1.8666666667vw;
@@ -930,9 +931,6 @@ body .wpcf7-mail-sent-ok {
   }
   .section-hero__image img {
     max-width: 100%;
-  }
-  .section-hero__badge {
-    display: none;
   }
 }
 
