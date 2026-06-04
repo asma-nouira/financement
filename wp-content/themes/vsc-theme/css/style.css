@@ -972,6 +972,7 @@ body .wpcf7-mail-sent-ok {
   .section-hero__content p {
     font-size: 14px;
     padding-right: 0;
+    margin-bottom: 20px;
   }
   .section-hero__image {
     width: 100%;
@@ -1000,10 +1001,10 @@ body .wpcf7-mail-sent-ok {
 }
 @media (max-width: 767px) {
   .section-objectif {
-    padding: 6.6666666667vw 4vw;
+    padding: 40px 30px;
   }
   .section-objectif p {
-    font-size: 2.6666666667vw;
+    font-size: 18px;
   }
 }
 
@@ -1032,6 +1033,17 @@ ul.special-ul li::before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+@media (max-width: 767px) {
+  ul.special-ul li {
+    font-size: 14px;
+    padding: 2px 0;
+    padding-left: 15px;
+  }
+  ul.special-ul li::before {
+    width: 9px;
+    height: 9px;
+  }
 }
 
 .section-comment {

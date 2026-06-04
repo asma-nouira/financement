@@ -128,7 +128,7 @@ color: #1ea524;
     &__content {
       max-width: 100%;
       h1 { font-size: 35px; margin-top: 0!important;}
-      p  { font-size: 14px; padding-right: 0;}
+      p  { font-size: 14px; padding-right: 0; margin-bottom: 20px;}
     }
 
     &__image {
@@ -158,8 +158,8 @@ color: #1ea524;
   }
 
   @include mobile {
-    padding: calc(50vw / 7.5) calc(30vw / 7.5);
-    p { font-size: calc(20vw / 7.5); }
+    padding: 40px 30px;
+    p { font-size: 18px; }
   }
 }
     ul.special-ul {
@@ -188,6 +188,17 @@ color: #1ea524;
            background-position: center;
         }
       }
+       @include mobile {
+        li{
+          font-size: 14px;
+          padding: 2px 0;
+          padding-left: 15px;
+           &::before {
+            width:9px;
+            height: 9px;
+           }
+        }
+       }
     }
 // ============================================
 // 4. COMMENT ÇA FONCTIONNE
