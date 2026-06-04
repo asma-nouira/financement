@@ -57,7 +57,7 @@ h1 {
   font-weight: 700;
   font-size: 2.8645833333vw;
   line-height: 1.09;
-  color: balck;
+  color: black;
 }
 
 h2 {
@@ -109,9 +109,19 @@ ul {
   font-weight: 500;
   padding: 0.8854166667vw 3.125vw;
 }
+@media (max-width: 767px) {
+  .btn-primary {
+    font-size: 14px;
+  }
+}
 .btn-primary:hover {
   opacity: 0.88;
   transform: translateY(-1px);
+}
+@media (max-width: 767px) {
+  .btn-primary {
+    padding: 15px 30px;
+  }
 }
 
 .btn-outline {
@@ -130,9 +140,19 @@ ul {
   border: 2px solid #000000;
   padding: 0.8854166667vw 3.125vw;
 }
+@media (max-width: 767px) {
+  .btn-outline {
+    font-size: 14px;
+  }
+}
 .btn-outline:hover {
   opacity: 0.88;
   transform: translateY(-1px);
+}
+@media (max-width: 767px) {
+  .btn-outline {
+    padding: 15px 30px;
+  }
 }
 .btn-outline:hover {
   background-color: #2C114F;
@@ -324,6 +344,11 @@ em {
   font-family: "Inter Bold";
   padding: 0.9895833333vw 1.9270833333vw;
 }
+@media (max-width: 767px) {
+  .site-header .header-actions .header-phone {
+    font-size: 14px;
+  }
+}
 .site-header .header-actions .header-phone:hover {
   opacity: 0.88;
   transform: translateY(-1px);
@@ -350,6 +375,11 @@ em {
   font-weight: 700;
   font-family: "Inter Bold";
   padding: 0.9895833333vw 2.8645833333vw;
+}
+@media (max-width: 767px) {
+  .site-header .header-actions .header-contact {
+    font-size: 14px;
+  }
 }
 .site-header .header-actions .header-contact:hover {
   opacity: 0.88;
