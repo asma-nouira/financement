@@ -1019,4 +1019,39 @@ ul.special-ul li::before {
     font-size: 1.7333333333vw;
   }
 }
+
+.section-cta {
+  padding: 7.2916666667vw 24.4791666667vw 8.8541666667vw;
+}
+.section-cta p {
+  font-family: "Inter";
+  font-size: 1.0416666667vw;
+  line-height: 1.4;
+  margin-bottom: 1.3020833333vw;
+}
+.section-cta p strong {
+  font-family: "Inter Bold";
+}
+.section-cta__buttons {
+  display: flex;
+  gap: 0.8854166667vw;
+  justify-content: center;
+  margin-top: 2.6041666667vw;
+}
+@media (max-width: 767px) {
+  .section-cta {
+    padding: 6.6666666667vw 4vw;
+  }
+  .section-cta h2 {
+    font-size: 3.7333333333vw;
+  }
+  .section-cta p {
+    font-size: 1.8666666667vw;
+  }
+  .section-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1333333333vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */

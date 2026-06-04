@@ -394,6 +394,42 @@ color: #1ea524;
 }
 
 
+// ============================================
+// 7. INFORMEZ-VOUS - CTA centré
+// ============================================
+.section-cta {
+  padding: calc(140vw / 19.2) calc(470vw / 19.2) calc(170vw / 19.2);
+
+  p {
+    font-family: 'Inter';
+    font-size: calc(20vw / 19.2);
+    line-height: 1.4;
+    margin-bottom:calc(25vw / 19.2);
+
+    strong { font-family: 'Inter Bold'; }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: calc(17vw / 19.2);
+    justify-content: center;
+    margin-top: calc(50vw / 19.2);
+  }
+
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(30vw / 7.5);
+
+    h2 { font-size: calc(28vw / 7.5); }
+    p  { font-size: calc(14vw / 7.5); }
+
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: calc(16vw / 7.5);
+    }
+  }
+}
+
 
 
 
