@@ -799,9 +799,6 @@ em {
   .site-footer {
     padding: 50px 30px;
   }
-  .site-footer__inner {
-    text-align: center;
-  }
   .site-footer__nav {
     width: 100%;
   }
