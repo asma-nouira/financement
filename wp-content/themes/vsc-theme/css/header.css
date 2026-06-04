@@ -395,6 +395,12 @@ em {
     padding: 10px;
     gap: 4px;
     margin-top: 8px;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 40vw;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   .site-header .main-navigation ul.toggled {
     display: flex;
