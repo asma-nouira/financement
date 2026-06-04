@@ -15,6 +15,10 @@
   // ---- LOGO ----
   .site-branding {
     flex-shrink: 0;
+    img{
+      max-width:calc(283vw / 19.2);
+      height: auto;
+    }
   }
 
   // ---- NAVIGATION ----

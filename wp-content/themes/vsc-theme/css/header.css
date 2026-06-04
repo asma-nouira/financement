@@ -260,6 +260,10 @@ em {
 .site-header .site-branding {
   flex-shrink: 0;
 }
+.site-header .site-branding img {
+  max-width: 14.7395833333vw;
+  height: auto;
+}
 .site-header .main-navigation {
   flex: 1;
   display: flex;
