@@ -412,7 +412,7 @@ em {
   .site-header .main-navigation ul li a {
     display: block;
     text-align: center;
-    padding: 15px 14px;
+    padding: 14px !important;
     font-size: 16px !important;
   }
 }
