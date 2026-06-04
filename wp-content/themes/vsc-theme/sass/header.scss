@@ -139,11 +139,8 @@
       ul {
         display: none;
         flex-direction: column;
-        border-radius: 12px;
+        border-radius: 0;
         padding: 10px;
-        gap: 4px;
-        margin-top: 8px;
-        
         position: absolute;
         top: 75%; // juste en dessous du bouton
         right: 0;
@@ -154,6 +151,9 @@
         &.toggled { display: block; }
          li{
           border-bottom: 1px solid white;
+          &:last-child{
+            border-bottom: none;
+          }
          }
         li a {
           display: block;

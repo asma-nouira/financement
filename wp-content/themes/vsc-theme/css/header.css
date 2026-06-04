@@ -391,10 +391,8 @@ em {
   .site-header .main-navigation ul {
     display: none;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 10px;
-    gap: 4px;
-    margin-top: 8px;
     position: absolute;
     top: 75%;
     right: 0;
@@ -407,6 +405,9 @@ em {
   }
   .site-header .main-navigation ul li {
     border-bottom: 1px solid white;
+  }
+  .site-header .main-navigation ul li:last-child {
+    border-bottom: none;
   }
   .site-header .main-navigation ul li a {
     display: block;
