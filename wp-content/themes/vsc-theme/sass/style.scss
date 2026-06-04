@@ -140,6 +140,9 @@ color: #1ea524;
        &__badge {
         bottom: 310px!important;
         right: 120px!important;
+         span.uppercase, .min-span, strong {
+          font-size: 14px;
+         }
     }
     
   }
