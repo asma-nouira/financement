@@ -941,6 +941,7 @@ ul.special-ul li::before {
 }
 .section-faq .vce-faq-toggle-title {
   cursor: pointer;
+  padding-right: 0;
 }
 .section-faq .vce-faq-toggle-title .vce-faq-toggle-title-text {
   font-family: "Inter Bold";
@@ -966,9 +967,6 @@ ul.special-ul li::before {
   display: none;
 }
 .section-faq .vce-faq-toggle-text-block {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
   padding: 0 1.4583333333vw;
   transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
 }

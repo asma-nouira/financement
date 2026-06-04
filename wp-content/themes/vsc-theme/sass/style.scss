@@ -307,7 +307,7 @@ color: #1ea524;
     // ---- Titre cliquable ----
     &-title {
       cursor: pointer;
-
+      padding-right: 0;
       .vce-faq-toggle-title-text {
         font-family: 'Inter Bold';
         font-size: calc(24vw / 19.2);
@@ -339,12 +339,9 @@ color: #1ea524;
 
     // ---- Contenu texte caché ----
     &-text-block {
-      overflow: hidden;
-      max-height: 0;
-      opacity: 0;
       padding: 0 calc(28vw / 19.2);
       transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
-
+       
       p {
         font-family: 'Inter';
         font-size: calc(20vw / 19.2);
