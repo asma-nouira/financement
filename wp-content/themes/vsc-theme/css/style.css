@@ -814,7 +814,7 @@ em {
     text-align: left;
   }
   .site-footer__nav-col.first {
-    padding-right: 0;
+    padding-right: 8px;
   }
   .site-footer__nav-col li a {
     font-size: 14px;
