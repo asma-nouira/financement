@@ -118,6 +118,10 @@
       @include mobile {
         padding: 40px;
         display: block;
+        .site-footer__copyright,
+      .site-footer__policy{
+        padding-bottom: 12px;
+      }
       }
     }
 }

@@ -851,6 +851,10 @@ em {
     padding: 40px;
     display: block;
   }
+  .site-footer__bottom .site-footer__copyright,
+  .site-footer__bottom .site-footer__policy {
+    padding-bottom: 12px;
+  }
 }
 
 /**************/
