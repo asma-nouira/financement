@@ -400,7 +400,7 @@ em {
     position: absolute;
     top: 75%;
     right: 0;
-    width: calc(100% - 28px);
+    width: calc(100% - 10px);
     z-index: 100;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
