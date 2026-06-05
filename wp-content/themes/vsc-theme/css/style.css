@@ -1335,6 +1335,7 @@ ul.special-ul li::before {
   display: inline-block;
   vertical-align: top;
   box-shadow: 8px 8px #2C114F;
+  margin-bottom: 7.8125vw;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .section-etapes__card--left {
@@ -1343,7 +1344,7 @@ ul.special-ul li::before {
 .section-etapes__card--right {
   float: right;
 }
-.section-etapes__card--right:first-child {
+.section-etapes__card--right.second-step {
   margin-top: 7.8125vw;
 }
 .section-etapes__card h3 {

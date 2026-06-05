@@ -529,6 +529,7 @@ color: #1ea524;
     display: inline-block;
     vertical-align: top;
     box-shadow: 8px 8px $color-primary;
+    margin-bottom:calc(150vw / 19.2);
     // Carte gauche (impair) : alignée à gauche
     &--left {
       float: left;
@@ -537,8 +538,8 @@ color: #1ea524;
     // Carte droite (pair) : alignée à droite
     &--right {
       float: right;
-      &:first-child{
-margin-top: calc(150vw / 19.2); // chevauchement vertical pour l'effet zigzag
+      &.second-step{
+ margin-top: calc(150vw / 19.2); // chevauchement vertical pour l'effet zigzag
       }
       
     }
