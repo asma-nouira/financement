@@ -357,10 +357,6 @@ color: #1ea524;
 // ============================================
 .section-faq {
   padding: calc(130vw / 19.2) calc(117vw / 19.2) calc(120vw / 19.2) calc(166vw / 19.2);
-  &.paterns{
-    padding-left:calc(140vw / 19.2) ;
-    padding-right:calc(140vw / 19.2) ;
-  }
   h2 {
     margin-bottom: calc(40vw / 19.2);
     color:white;
@@ -442,6 +438,7 @@ color: #1ea524;
     // ---- État ouvert — VC ajoute vce-faq-toggle--active ----
 
   }
+  
 
   @include mobile {
     padding: 50px 25px;
@@ -474,7 +471,10 @@ color: #1ea524;
   }
 }
 
+.section-faq.paterns{
+  padding: calc(130vw / 19.2) calc(117vw / 19.2) calc(120vw / 19.2) calc(166vw / 19.2);
 
+}
 // ============================================
 // 7. INFORMEZ-VOUS - CTA centré
 // ============================================
