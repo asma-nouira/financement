@@ -1347,6 +1347,9 @@ ul.special-ul li::before {
   margin-top: 7.8125vw;
   margin-bottom: 3.75vw;
 }
+.section-etapes__card.step-3, .section-etapes__card.step-5 {
+  margin-top: -5.2083333333vw;
+}
 .section-etapes__card h3 {
   font-family: "BeVietnamPro", sans-serif;
   font-weight: 700;

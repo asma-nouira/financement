@@ -542,6 +542,9 @@ color: #1ea524;
       }
       
     }
+    &.step-3, &.step-5{
+     margin-top:calc(-100vw / 19.2);
+    }
 
     h3 {
       font-family: 'BeVietnamPro', sans-serif;
