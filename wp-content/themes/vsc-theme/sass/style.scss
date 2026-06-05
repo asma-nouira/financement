@@ -511,6 +511,18 @@ color: #1ea524;
   }
 }
 
+.section-cta.paterns{
+  padding: calc(138vw / 19.2) calc(416vw / 19.2) calc(130vw / 19.2);
+
+  .btn-primary{
+    background-color: black;
+  }
+  .btn-outline{
+    color:$color-primary;
+    border-color: $color-primary;
+  }
+}
+
 .title-step{
   padding: calc(96vw / 19.2) calc(420vw / 19.2) calc(76vw / 19.2);
 }

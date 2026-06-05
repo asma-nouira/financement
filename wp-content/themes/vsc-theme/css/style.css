@@ -1372,6 +1372,17 @@ ul.special-ul li::before {
   }
 }
 
+.section-cta.paterns {
+  padding: 7.1875vw 21.6666666667vw 6.7708333333vw;
+}
+.section-cta.paterns .btn-primary {
+  background-color: black;
+}
+.section-cta.paterns .btn-outline {
+  color: #2C114F;
+  border-color: #2C114F;
+}
+
 .title-step {
   padding: 5vw 21.875vw 3.9583333333vw;
 }
