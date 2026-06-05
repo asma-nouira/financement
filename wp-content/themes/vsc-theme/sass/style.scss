@@ -790,13 +790,6 @@ color: #1ea524;
 // ============================================
  
 .section-avantages { 
-
-  // Grille 4 cartes sur une ligne
-  &__grid {
-    text-align: center; // centre les inline-block
-    font-size: 0;       // annule l'espace entre inline-block
-  }
- 
   // Carte individuelle
   &__card {
     display: inline-block;
