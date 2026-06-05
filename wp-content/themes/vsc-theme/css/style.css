@@ -1320,8 +1320,6 @@ ul.special-ul li::before {
 }
 .section-etapes__row {
   display: block;
-  padding-bottom: 0.8333333333vw;
-  margin-bottom: 3.75vw;
 }
 .section-etapes__row::after {
   content: "";
@@ -1344,7 +1342,9 @@ ul.special-ul li::before {
 }
 .section-etapes__card--right {
   float: right;
-  margin-top: -4.1666666667vw;
+}
+.section-etapes__card--right:first-child {
+  margin-top: 7.8125vw;
 }
 .section-etapes__card h3 {
   font-family: "BeVietnamPro", sans-serif;

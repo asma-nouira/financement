@@ -512,12 +512,6 @@ color: #1ea524;
   
   &__row {
     display: block;
-    // Pas de overflow:hidden — il coupe le box-shadow en bas
-    // On ajoute padding-bottom pour que l'ombre soit visible
-    padding-bottom: calc(16vw / 19.2);
-    margin-bottom: calc(72vw / 19.2);
- 
-    // Clearfix sans overflow:hidden
     &::after {
       content: '';
       display: table;
@@ -543,7 +537,10 @@ color: #1ea524;
     // Carte droite (pair) : alignée à droite
     &--right {
       float: right;
-      margin-top: calc(-80vw / 19.2); // chevauchement vertical pour l'effet zigzag
+      &:first-child{
+margin-top: calc(150vw / 19.2); // chevauchement vertical pour l'effet zigzag
+      }
+      
     }
 
     h3 {
