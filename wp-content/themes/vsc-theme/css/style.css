@@ -1381,6 +1381,7 @@ ul.special-ul li::before {
 .section-cta.paterns .btn-outline {
   color: #2C114F;
   border-color: #2C114F;
+  font-weight: 700;
 }
 
 .title-step {
