@@ -1328,7 +1328,7 @@ ul.special-ul li::before {
   background-color: #FFFFFF;
   border: 1px solid #2C114F;
   border-radius: 1.8229166667vw;
-  box-shadow: 0.4166666667vw 0.4166666667vw 0px 0px #2C114F;
+  box-shadow: 0.46875vw 0 0px 0px #2C114F;
   padding: 3.8020833333vw 4.375vw 2.2916666667vw 1.875vw;
   display: inline-block;
   vertical-align: top;
