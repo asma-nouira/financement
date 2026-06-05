@@ -605,4 +605,86 @@ color: #1ea524;
     }
   }
 }
-
+.section-conditions{
+  padding:calc(100vw / 19.2) calc(375vw / 19.2) calc(145vw / 19.2);
+  h2{
+    padding-bottom:calc(60vw / 19.2);
+  }
+    // Chaque cercle
+  &__circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(265vw / 19.2);
+    height: calc(265vw / 19.2);
+    border-radius: 50%;
+    background-color: $color-secondary;
+    position: relative;
+    text-align: center;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+    color:white;
+ 
+    &:hover {
+      transform: scale(1.05);
+      background-color: $color-primary;
+    }
+ 
+    // Centrage vertical du contenu sans flex
+    &-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+ 
+    // Label en haut — uppercase petit
+    &-label {
+      display: block;
+      font-family: 'Inter Bold';
+      font-weight: 700;
+      font-size: calc(24vw / 19.2);
+      color: $color-white;
+      text-transform: uppercase;
+      letter-spacing: calc(1vw / 19.2);
+      line-height: 1.25;
+      margin-bottom: calc(6vw / 19.2);
+    }
+ 
+    // Valeur en bas — grande et bold
+    &-value {
+      display: block;
+      font-family: 'Inter Bold', sans-serif;
+      font-weight: 700;
+      font-size: calc(30vw / 19.2);
+      color: $color-white;
+      line-height: 1.16;
+    }
+ 
+    // Valeur secondaire (sous-texte comme "Possible, sans frais")
+    &-sub {
+      display: block;
+      font-family: 'Inter';
+      font-size: calc(28vw / 19.2);
+      color: $color-white;
+      line-height: 1.07;
+    }
+  }
+ 
+  // Les animations sont gérées via les classes anim-* dans le HTML
+ 
+  // ---- MOBILE ----
+  @include mobile {
+    padding: calc(50vw / 7.5) calc(20vw / 7.5);
+ 
+ 
+    &__circle {
+      width: calc(155vw / 7.5);
+      height: calc(155vw / 7.5);
+      margin: calc(10vw / 7.5) calc(8vw / 7.5);
+ 
+      &-label { font-size: calc(9vw / 7.5); }
+      &-value { font-size: calc(18vw / 7.5); }
+      &-sub   { font-size: calc(11vw / 7.5); }
+    }
+  }
+}

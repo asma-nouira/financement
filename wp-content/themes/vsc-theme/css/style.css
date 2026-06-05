@@ -1397,4 +1397,79 @@ ul.special-ul li::before {
     font-size: 1.8666666667vw;
   }
 }
+
+.section-conditions {
+  padding: 5.2083333333vw 19.53125vw 7.5520833333vw;
+}
+.section-conditions h2 {
+  padding-bottom: 3.125vw;
+}
+.section-conditions__circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 13.8020833333vw;
+  height: 13.8020833333vw;
+  border-radius: 50%;
+  background-color: #976CFF;
+  position: relative;
+  text-align: center;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  color: white;
+}
+.section-conditions__circle:hover {
+  transform: scale(1.05);
+  background-color: #2C114F;
+}
+.section-conditions__circle-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.section-conditions__circle-label {
+  display: block;
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.0520833333vw;
+  line-height: 1.25;
+  margin-bottom: 0.3125vw;
+}
+.section-conditions__circle-value {
+  display: block;
+  font-family: "Inter Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  color: #FFFFFF;
+  line-height: 1.16;
+}
+.section-conditions__circle-sub {
+  display: block;
+  font-family: "Inter";
+  font-size: 1.4583333333vw;
+  color: #FFFFFF;
+  line-height: 1.07;
+}
+@media (max-width: 767px) {
+  .section-conditions {
+    padding: 6.6666666667vw 2.6666666667vw;
+  }
+  .section-conditions__circle {
+    width: 20.6666666667vw;
+    height: 20.6666666667vw;
+    margin: 1.3333333333vw 1.0666666667vw;
+  }
+  .section-conditions__circle-label {
+    font-size: 1.2vw;
+  }
+  .section-conditions__circle-value {
+    font-size: 2.4vw;
+  }
+  .section-conditions__circle-sub {
+    font-size: 1.4666666667vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */
