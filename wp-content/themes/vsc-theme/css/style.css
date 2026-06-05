@@ -1380,6 +1380,8 @@ ul.special-ul li::before {
 }
 .section-cta.paterns p {
   padding-bottom: 0;
+  padding-left: 15.625vw;
+  padding-right: 15.625vw;
 }
 .section-cta.paterns .section-cta__buttons {
   margin-top: 1.8229166667vw;
