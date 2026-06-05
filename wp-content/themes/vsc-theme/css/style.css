@@ -1569,6 +1569,16 @@ ul.special-ul li::before {
 .list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:after, .list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:before {
   background-color: black;
 }
+.list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened {
+  background-color: #976CFF;
+  color: white;
+}
+.list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon::before {
+  color: white;
+}
+.list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon::after {
+  display: none;
+}
 .list-faq .vce-faq-group-item-icon {
   right: 1.5625vw;
 }
