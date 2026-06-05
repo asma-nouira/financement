@@ -1013,6 +1013,10 @@ body .wpcf7-mail-sent-ok {
   }
 }
 
+.section-hero.pages p {
+  padding-bottom: 2.0833333333vw;
+}
+
 .section-objectif {
   padding: 5.8333333333vw 23.6979166667vw 6.3541666667vw;
 }
