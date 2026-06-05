@@ -273,6 +273,10 @@ white-space: nowrap;
 .pr-140{
   padding-right: calc(140vw / 19.2);
 }
+.plr-415{
+  padding-left: calc(415vw / 19.2);
+  padding-right: calc(415vw / 19.2);
+}
 .no-desktop{
   display: none;
   @media(max-width:768px){

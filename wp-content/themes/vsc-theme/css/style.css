@@ -268,6 +268,11 @@ em {
   padding-right: 7.2916666667vw;
 }
 
+.plr-415 {
+  padding-left: 21.6145833333vw;
+  padding-right: 21.6145833333vw;
+}
+
 .no-desktop {
   display: none;
 }
@@ -544,6 +549,11 @@ em {
 
 .pr-140 {
   padding-right: 7.2916666667vw;
+}
+
+.plr-415 {
+  padding-left: 21.6145833333vw;
+  padding-right: 21.6145833333vw;
 }
 
 .no-desktop {
