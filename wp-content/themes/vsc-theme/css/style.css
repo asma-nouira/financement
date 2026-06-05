@@ -1566,6 +1566,9 @@ ul.special-ul li::before {
   background-color: #F5F5F5;
   border-radius: 1.8229166667vw;
 }
+.list-faq .vce-faq-group-item-content {
+  border-top: none;
+}
 .list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:after, .list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:before {
   background-color: black;
 }
@@ -1582,7 +1585,7 @@ ul.special-ul li::before {
   transform: rotate(0);
 }
 .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon::before {
-  color: white;
+  background-color: white;
 }
 .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon::after {
   display: none;
