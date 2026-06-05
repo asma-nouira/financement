@@ -1558,10 +1558,10 @@ ul.special-ul li::before {
 
 .list-faq .vce-faq-group-shape--square .vce-faq-group-item {
   border: none;
+  margin-bottom: 1.0416666667vw;
 }
 .list-faq .vce-faq-group-item-heading {
   padding: 1.0416666667vw 2.9166666667vw;
-  margin-bottom: 1.0416666667vw;
   color: #000000;
   background-color: #F5F5F5;
   border-radius: 1.8229166667vw;

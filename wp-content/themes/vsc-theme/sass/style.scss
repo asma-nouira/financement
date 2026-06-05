@@ -733,10 +733,10 @@ color: #1ea524;
 .list-faq{
   .vce-faq-group-shape--square .vce-faq-group-item{
      border:none;
+      margin-bottom:calc(20vw / 19.2);
   }
   .vce-faq-group-item-heading{
     padding: calc(20vw / 19.2) calc(56vw / 19.2);
-    margin-bottom:calc(20vw / 19.2);
     color:$color-text;
     background-color: $color-grey-light;
     border-radius: calc(35vw / 19.2);
