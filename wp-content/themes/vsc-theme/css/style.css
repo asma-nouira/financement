@@ -1324,15 +1324,24 @@ ul.special-ul li::before {
   overflow: hidden;
 }
 .section-etapes__card {
-  width: 23.4375vw;
+  width: 22.65625vw;
   background-color: #FFFFFF;
   border: 1px solid #2C114F;
   border-radius: 1.8229166667vw;
-  box-shadow: 0.46875vw 0 0px 0px #2C114F;
   padding: 3.8020833333vw 4.375vw 2.2916666667vw 1.875vw;
   display: inline-block;
   vertical-align: top;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.section-etapes__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.8229166667vw;
+  border: 1px solid #2C114F;
+  transform: translate(0.4166666667vw, 0.4166666667vw);
+  z-index: -1;
+  pointer-events: none;
 }
 .section-etapes__card--left {
   float: left;
