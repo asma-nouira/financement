@@ -521,7 +521,7 @@ color: #1ea524;
 
   // Carte individuelle
   &__card {
-    width: calc(435vw / 19.2);
+    width: calc(450vw / 19.2);
     background-color: $color-white;
     border: 1px solid $color-primary;
     border-radius: calc(35vw / 19.2);
@@ -542,10 +542,12 @@ color: #1ea524;
       }
       
     }
-    &.step-3, &.step-5{
-     margin-top:calc(-100vw / 19.2);
+    &.step-3{
+     margin-top:calc(-120vw / 19.2);
     }
-
+    &.step-5{
+     margin-top:calc(-120vw / 19.2);
+    }
     h3 {
       font-family: 'BeVietnamPro', sans-serif;
       font-weight: 700;
