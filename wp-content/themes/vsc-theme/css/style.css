@@ -1573,6 +1573,14 @@ ul.special-ul li::before {
   background-color: #976CFF;
   color: white;
 }
+.list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened h3 {
+  color: white;
+}
+.list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon {
+  color: white;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
 .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon::before {
   color: white;
 }

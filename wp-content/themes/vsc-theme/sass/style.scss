@@ -747,7 +747,13 @@ color: #1ea524;
 .vce-faq-group-item-heading.vce-faq-group-item--opened{
   background-color: $color-secondary;
   color:white;
+  h3{
+     color:white;
+  }
   .vce-faq-group-item-icon{
+    color:white;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
     &::before{
       color:white;
     }
