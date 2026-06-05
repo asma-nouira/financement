@@ -1555,4 +1555,8 @@ ul.special-ul li::before {
   color: white;
   border-color: white;
 }
+
+.list-faq .vce-faq-group-shape--square .vce-faq-group-item {
+  border: none;
+}
 /*# sourceMappingURL=../css/style.css.map */
