@@ -1022,7 +1022,14 @@ body .wpcf7-mail-sent-ok {
 }
 
 .section-hero.pages p {
-  padding-bottom: 2.0833333333vw;
+  margin-bottom: 2.0833333333vw;
+}
+
+.section-hero.faq h1 {
+  padding-bottom: 1.0416666667vw;
+}
+.section-hero.faq p {
+  margin-bottom: 2.0833333333vw;
 }
 
 .section-objectif {

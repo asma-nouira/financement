@@ -148,9 +148,19 @@ color: #1ea524;
 }
 .section-hero.pages{
   p{
-    padding-bottom: calc(40vw / 19.2);
+    margin-bottom: calc(40vw / 19.2);
   }
 }
+
+.section-hero.faq{
+  h1{
+    padding-bottom: calc(20vw / 19.2);
+  }
+  p{
+    margin-bottom: calc(40vw / 19.2);
+  }
+}
+
 // ============================================
 // 2. CITATION / OBJECTIF
 // ============================================
