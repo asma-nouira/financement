@@ -509,10 +509,20 @@ color: #1ea524;
   }
 
   // Chaque rangée = 1 carte gauche + 1 carte droite
+  
   &__row {
     display: block;
-    margin-bottom: calc(30vw / 19.2);
-    overflow: hidden; // clearfix pour les float
+    // Pas de overflow:hidden — il coupe le box-shadow en bas
+    // On ajoute padding-bottom pour que l'ombre soit visible
+    padding-bottom: calc(16vw / 19.2);
+    margin-bottom: calc(14vw / 19.2);
+ 
+    // Clearfix sans overflow:hidden
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
   }
 
   // Carte individuelle

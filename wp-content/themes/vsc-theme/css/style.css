@@ -1320,8 +1320,13 @@ ul.special-ul li::before {
 }
 .section-etapes__row {
   display: block;
-  margin-bottom: 1.5625vw;
-  overflow: hidden;
+  padding-bottom: 0.8333333333vw;
+  margin-bottom: 0.7291666667vw;
+}
+.section-etapes__row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .section-etapes__card {
   width: 22.65625vw;
