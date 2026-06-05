@@ -513,7 +513,15 @@ color: #1ea524;
 
 .section-cta.paterns{
   padding: calc(138vw / 19.2) calc(416vw / 19.2) calc(130vw / 19.2);
-
+  h2{
+    padding-bottom: calc(20vw / 19.2);
+  }
+  p{
+    padding-bottom: 0;
+  }
+.section-cta__buttons{
+  margin-top:calc(35vw / 19.2);
+}
   .btn-primary{
     background-color: black;
   }

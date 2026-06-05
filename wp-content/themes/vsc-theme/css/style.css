@@ -1375,6 +1375,15 @@ ul.special-ul li::before {
 .section-cta.paterns {
   padding: 7.1875vw 21.6666666667vw 6.7708333333vw;
 }
+.section-cta.paterns h2 {
+  padding-bottom: 1.0416666667vw;
+}
+.section-cta.paterns p {
+  padding-bottom: 0;
+}
+.section-cta.paterns .section-cta__buttons {
+  margin-top: 1.8229166667vw;
+}
 .section-cta.paterns .btn-primary {
   background-color: black;
 }
