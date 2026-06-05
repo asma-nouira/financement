@@ -1559,4 +1559,23 @@ ul.special-ul li::before {
 .list-faq .vce-faq-group-shape--square .vce-faq-group-item {
   border: none;
 }
+.list-faq .vce-faq-group-item-heading {
+  padding: 1.0416666667vw 2.9166666667vw;
+  margin-bottom: 1.0416666667vw;
+  color: #000000;
+  background-color: #F5F5F5;
+  border-radius: 1.8229166667vw;
+}
+.list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:after, .list-faq .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:before {
+  background-color: black;
+}
+.list-faq .vce-faq-group-item-icon {
+  right: 1.5625vw;
+}
+.list-faq .vce-faq-group-item-icon:after {
+  height: 12px;
+}
+.list-faq .vce-faq-group-item-icon:before {
+  width: 12px;
+}
 /*# sourceMappingURL=../css/style.css.map */
