@@ -1313,20 +1313,10 @@ ul.special-ul li::before {
   padding: 5vw 21.875vw 3.9583333333vw;
 }
 
-.section-etapes {
-  background-color: #F5F5F5;
-  padding: 4.6875vw 7.2916666667vw;
-}
-.section-etapes__title {
-  font-family: "BeVietnamPro", sans-serif;
-  font-weight: 700;
-  font-size: 1.875vw;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 3.6458333333vw;
-}
 .section-etapes__grid {
   position: relative;
+  background-color: #F5F5F5;
+  padding: 5.2083333333vw 13.5416666667vw 5.2083333333vw 14.4791666667vw;
 }
 .section-etapes__row {
   display: block;
@@ -1334,12 +1324,12 @@ ul.special-ul li::before {
   overflow: hidden;
 }
 .section-etapes__card {
-  width: 30.2083333333vw;
+  width: 23.4375vw;
   background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 0.8333333333vw;
-  box-shadow: 0.4166666667vw 0.4166666667vw 0px 0px #976CFF;
-  padding: 2.0833333333vw 2.2916666667vw;
+  border: 1px solid #2C114F;
+  border-radius: 1.8229166667vw;
+  box-shadow: 0.4166666667vw 0.4166666667vw 0px 0px #2C114F;
+  padding: 3.8020833333vw 4.375vw 2.2916666667vw 1.875vw;
   display: inline-block;
   vertical-align: top;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1354,17 +1344,13 @@ ul.special-ul li::before {
 .section-etapes__card h3 {
   font-family: "BeVietnamPro", sans-serif;
   font-weight: 700;
-  font-size: 1.4583333333vw;
+  font-size: 2.34375vw;
   color: #000000;
-  line-height: 1.2;
-  margin-bottom: 0.8333333333vw;
+  line-height: 1.11;
+  margin-bottom: 0.6770833333vw;
 }
 .section-etapes__card p {
-  font-family: "Inter";
-  font-size: 0.78125vw;
-  color: #000000;
-  line-height: 1.7;
-  margin-bottom: 0.625vw;
+  margin-bottom: 1.0416666667vw;
 }
 .section-etapes__card p:last-child {
   margin-bottom: 0;

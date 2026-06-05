@@ -500,22 +500,12 @@ color: #1ea524;
 // ============================================
 
 .section-etapes {
-  background-color: $color-grey-light;
-  padding: calc(90vw / 19.2) calc(140vw / 19.2);
-
-  // Titre centré
-  &__title {
-    font-family: 'BeVietnamPro', sans-serif;
-    font-weight: 700;
-    font-size: calc(36vw / 19.2);
-    color: $color-text;
-    text-align: center;
-    margin-bottom: calc(70vw / 19.2);
-  }
 
   // Grille zigzag : 2 colonnes
   &__grid {
     position: relative;
+    background-color: $color-grey-light;
+  padding: calc(100vw / 19.2) calc(260vw / 19.2) calc(100vw / 19.2) calc(278vw / 19.2);
   }
 
   // Chaque rangée = 1 carte gauche + 1 carte droite
@@ -527,15 +517,15 @@ color: #1ea524;
 
   // Carte individuelle
   &__card {
-    width: calc(580vw / 19.2);
+    width: calc(450vw / 19.2);
     background-color: $color-white;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: calc(16vw / 19.2);
+    border: 1px solid $color-primary;
+    border-radius: calc(35vw / 19.2);
 
     // Ombre violette en bas à droite — signature du design
-    box-shadow: calc(8vw / 19.2) calc(8vw / 19.2) 0px 0px $color-secondary;
+    box-shadow: calc(8vw / 19.2) calc(8vw / 19.2) 0px 0px $color-primary;
 
-    padding: calc(40vw / 19.2) calc(44vw / 19.2);
+    padding: calc(73vw / 19.2) calc(84vw / 19.2) calc(44vw / 19.2) calc(36vw / 19.2);
     display: inline-block;
     vertical-align: top;
 
@@ -553,18 +543,14 @@ color: #1ea524;
     h3 {
       font-family: 'BeVietnamPro', sans-serif;
       font-weight: 700;
-      font-size: calc(28vw / 19.2);
+      font-size: calc(45vw / 19.2);
       color: $color-text;
-      line-height: 1.2;
-      margin-bottom: calc(16vw / 19.2);
+      line-height: 1.11;
+      margin-bottom: calc(13vw / 19.2);
     }
 
     p {
-      font-family: 'Inter';
-      font-size: calc(15vw / 19.2);
-      color: $color-text;
-      line-height: 1.7;
-      margin-bottom: calc(12vw / 19.2);
+      margin-bottom: calc(20vw / 19.2);
 
       &:last-child { margin-bottom: 0; }
     }
