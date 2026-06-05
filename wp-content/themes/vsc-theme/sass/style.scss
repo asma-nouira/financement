@@ -790,7 +790,9 @@ color: #1ea524;
 // ============================================
  
 .section-avantages { 
-  // Carte individuelle
+  &__grid{
+    margin-bottom: calc(110vw / 19.2);
+  }
   &__card {
     display: inline-block;
     vertical-align: top;
@@ -798,7 +800,7 @@ color: #1ea524;
     border-radius: calc(34vw / 19.2);
     padding: calc(30vw / 19.2) calc(27vw / 19.2) calc(42vw / 19.2);
     text-align: left;
- 
+     
     // Hover — légère remontée
     transition: transform 0.25s ease, background-color 0.25s ease;
  
