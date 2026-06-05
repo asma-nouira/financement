@@ -1658,4 +1658,10 @@ ul.special-ul li::before {
     font-size: 14px;
   }
 }
+
+.title-function {
+  padding-left: 23.4375vw;
+  padding-right: 23.4375vw;
+  padding-bottom: 4.4270833333vw;
+}
 /*# sourceMappingURL=../css/style.css.map */
