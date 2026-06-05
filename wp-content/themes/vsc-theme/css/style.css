@@ -1639,7 +1639,7 @@ ul.special-ul li::before {
   line-height: 1.3;
   margin-bottom: 0.8333333333vw;
 }
-.section-avantages__card-text {
+.section-avantages__card p {
   color: white;
 }
 @media (max-width: 767px) {
@@ -1655,7 +1655,7 @@ ul.special-ul li::before {
   .section-avantages__card-title {
     font-size: 18px;
   }
-  .section-avantages__card-text {
+  .section-avantages__card p {
     font-size: 14px;
   }
 }

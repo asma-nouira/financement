@@ -831,7 +831,7 @@ color: #1ea524;
     }
  
     // ---- Texte ----
-    &-text {
+    p {
      color:white;
     }
   }
@@ -848,7 +848,7 @@ color: #1ea524;
       }
  
       &-title { font-size: 18px; }
-      &-text  { font-size: 14px; }
+      p  { font-size: 14px; }
     }
   }
 }
