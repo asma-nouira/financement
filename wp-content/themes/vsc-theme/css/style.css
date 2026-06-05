@@ -1487,6 +1487,7 @@ ul.special-ul li::before {
 }
 .section-access h2 {
   padding-bottom: 1.0416666667vw;
+  color: white;
 }
 .section-access .desc {
   font-size: 1.5625vw;
