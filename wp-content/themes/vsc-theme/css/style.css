@@ -1308,4 +1308,95 @@ ul.special-ul li::before {
     gap: 0;
   }
 }
+
+.title-step {
+  padding: 5vw 21.875vw 3.9583333333vw;
+}
+
+.section-etapes {
+  background-color: #F5F5F5;
+  padding: 4.6875vw 7.2916666667vw;
+}
+.section-etapes__title {
+  font-family: "BeVietnamPro", sans-serif;
+  font-weight: 700;
+  font-size: 1.875vw;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 3.6458333333vw;
+}
+.section-etapes__grid {
+  position: relative;
+}
+.section-etapes__row {
+  display: block;
+  margin-bottom: 1.5625vw;
+  overflow: hidden;
+}
+.section-etapes__card {
+  width: 30.2083333333vw;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.8333333333vw;
+  box-shadow: 0.4166666667vw 0.4166666667vw 0px 0px #976CFF;
+  padding: 2.0833333333vw 2.2916666667vw;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.section-etapes__card--left {
+  float: left;
+}
+.section-etapes__card--right {
+  float: right;
+  margin-top: -4.1666666667vw;
+}
+.section-etapes__card h3 {
+  font-family: "BeVietnamPro", sans-serif;
+  font-weight: 700;
+  font-size: 1.4583333333vw;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 0.8333333333vw;
+}
+.section-etapes__card p {
+  font-family: "Inter";
+  font-size: 0.78125vw;
+  color: #000000;
+  line-height: 1.7;
+  margin-bottom: 0.625vw;
+}
+.section-etapes__card p:last-child {
+  margin-bottom: 0;
+}
+.section-etapes__card:hover {
+  transform: translateY(-0.2083333333vw);
+  box-shadow: 0.4166666667vw 0.625vw 0px 0px #976CFF;
+}
+.section-etapes__row--single .section-etapes__card {
+  float: left;
+}
+@media (max-width: 767px) {
+  .section-etapes {
+    padding: 6.6666666667vw 4vw;
+  }
+  .section-etapes__title {
+    font-size: 3.4666666667vw;
+    margin-bottom: 5.3333333333vw;
+  }
+  .section-etapes__card {
+    width: 100%;
+    float: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 2.6666666667vw;
+    box-shadow: 0.8vw 0.8vw 0px 0px #976CFF;
+    padding: 4vw 3.4666666667vw;
+  }
+  .section-etapes__card h3 {
+    font-size: 2.6666666667vw;
+  }
+  .section-etapes__card p {
+    font-size: 1.8666666667vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */
