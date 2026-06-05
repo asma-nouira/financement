@@ -1480,4 +1480,17 @@ ul.special-ul li::before {
     font-size: 1.4666666667vw;
   }
 }
+
+.section-access {
+  padding: 7.0833333333vw 28.90625vw 6.5104166667vw;
+  color: white;
+}
+.section-access h2 {
+  padding-bottom: 1.0416666667vw;
+}
+.section-access .desc {
+  font-size: 1.5625vw;
+  line-height: 1.33;
+  padding-bottom: 1.0416666667vw;
+}
 /*# sourceMappingURL=../css/style.css.map */

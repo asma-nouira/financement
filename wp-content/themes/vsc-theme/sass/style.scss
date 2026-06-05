@@ -688,3 +688,15 @@ color: #1ea524;
     }
   }
 }
+.section-access{
+  padding: calc(136vw / 19.2) calc(555vw / 19.2 ) calc(125vw / 19.2);
+  color:white;
+  h2{
+    padding-bottom: calc(20vw / 19.2);
+  }
+  .desc{
+    font-size: calc(30vw / 19.2);
+    line-height: 1.33;
+     padding-bottom: calc(20vw / 19.2);
+  }
+}
