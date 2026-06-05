@@ -1235,6 +1235,10 @@ ul.special-ul li::before {
 .section-faq {
   padding: 6.7708333333vw 6.09375vw 6.25vw 8.6458333333vw;
 }
+.section-faq.paterns {
+  padding-left: 7.2916666667vw;
+  padding-right: 7.2916666667vw;
+}
 .section-faq h2 {
   margin-bottom: 2.0833333333vw;
   color: white;
