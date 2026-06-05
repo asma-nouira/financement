@@ -1331,17 +1331,8 @@ ul.special-ul li::before {
   padding: 3.8020833333vw 4.375vw 2.2916666667vw 1.875vw;
   display: inline-block;
   vertical-align: top;
+  box-shadow: 8px 8px #2C114F;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.section-etapes__card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 1.8229166667vw;
-  border: 1px solid #2C114F;
-  transform: translate(0.4166666667vw, 0.4166666667vw);
-  z-index: -1;
-  pointer-events: none;
 }
 .section-etapes__card--left {
   float: left;

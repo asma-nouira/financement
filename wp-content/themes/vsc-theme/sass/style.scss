@@ -524,16 +524,7 @@ color: #1ea524;
     padding: calc(73vw / 19.2) calc(84vw / 19.2) calc(44vw / 19.2) calc(36vw / 19.2);
     display: inline-block;
     vertical-align: top;
-    &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: calc(35vw / 19.2);
-      border: 1px solid $color-primary;
-      transform: translate(calc(8vw / 19.2), calc(8vw / 19.2));
-      z-index: -1;
-      pointer-events: none;
-    }
+    box-shadow: 8px 8px $color-primary;
     // Carte gauche (impair) : alignée à gauche
     &--left {
       float: left;
