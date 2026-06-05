@@ -1494,4 +1494,15 @@ ul.special-ul li::before {
   line-height: 1.33;
   padding-bottom: 1.0416666667vw;
 }
+.section-access .section-cta__buttons {
+  margin-top: 0;
+}
+.section-access .section-cta__buttons .btn-primary {
+  background-color: #976CFF;
+  color: white;
+}
+.section-access .section-cta__buttons .btn-outline {
+  color: white;
+  border-color: white;
+}
 /*# sourceMappingURL=../css/style.css.map */

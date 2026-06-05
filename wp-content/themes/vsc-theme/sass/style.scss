@@ -700,4 +700,15 @@ color: #1ea524;
     line-height: 1.33;
      padding-bottom: calc(20vw / 19.2);
   }
+  .section-cta__buttons{
+    margin-top:0;
+    .btn-primary{
+      background-color: $color-secondary;
+      color:white;
+    }
+    .btn-outline{
+      color:white;
+      border-color: white;
+    }
+  }
 }
