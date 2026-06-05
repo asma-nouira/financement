@@ -160,7 +160,14 @@ color: #1ea524;
     margin-bottom: calc(40vw / 19.2);
   }
 }
-
+.fil-ariane{
+  padding-top: 20px;
+  font-size: calc(20vw / 19.2);
+  .breadcrumb_last{
+    font-weight: 700;
+    color:$color-primary;
+  }
+}
 // ============================================
 // 2. CITATION / OBJECTIF
 // ============================================
