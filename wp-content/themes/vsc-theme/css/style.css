@@ -1101,6 +1101,11 @@ body .wpcf7-mail-sent-ok {
   font-weight: 700;
   color: #2C114F;
 }
+@media (max-width: 767px) {
+  .fil-ariane {
+    font-size: 18px;
+  }
+}
 
 .section-objectif {
   padding: 5.8333333333vw 23.6979166667vw 6.3541666667vw;

@@ -168,6 +168,9 @@ color: #1ea524;
     font-weight: 700;
     color:$color-primary;
   }
+  @media(max-width:767px){
+    font-size: 18px;
+  }
 }
 // ============================================
 // 2. CITATION / OBJECTIF
