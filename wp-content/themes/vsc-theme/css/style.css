@@ -2019,7 +2019,7 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .btn-outline.primary {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=../css/style.css.map */
