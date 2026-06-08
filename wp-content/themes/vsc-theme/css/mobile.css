@@ -258,6 +258,11 @@ em {
   font-style: normal;
   white-space: nowrap;
 }
+@media (max-width: 767px) {
+  em {
+    white-space: initial;
+  }
+}
 
 .pt-130 {
   padding-top: 6.7708333333vw;

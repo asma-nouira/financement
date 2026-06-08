@@ -266,6 +266,9 @@ padding-bottom: calc(25vw / 19.2);
 em{
 font-style: normal;
 white-space: nowrap;
+@media(max-width:767px){
+  white-space: initial;
+}
 }
 .pt-130{
   padding-top: calc(130vw / 19.2);
