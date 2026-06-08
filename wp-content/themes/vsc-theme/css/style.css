@@ -1755,6 +1755,7 @@ ul.special-ul li::before {
   }
   .section-avantages__card {
     padding: 22px;
+    margin-bottom: 20px;
   }
   .section-avantages__card-icon {
     margin-bottom: 15px;
@@ -1772,10 +1773,23 @@ ul.special-ul li::before {
   padding-right: 23.4375vw;
   padding-bottom: 4.4270833333vw;
 }
+@media (max-width: 767px) {
+  .title-function {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+  }
+}
 
 .section-infos {
   padding-top: 9.8958333333vw;
   padding-bottom: 5.2083333333vw;
+}
+@media (max-width: 767px) {
+  .section-infos {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 }
 .section-infos .title-bold {
   font-size: 1.25vw;
@@ -1783,10 +1797,21 @@ ul.special-ul li::before {
   line-height: 1.2;
   padding-bottom: 1.8229166667vw;
 }
+@media (max-width: 767px) {
+  .section-infos .title-bold {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+}
 
 .desc-30 {
   font-size: 1.5625vw;
   line-height: 1.33;
+}
+@media (max-width: 767px) {
+  .desc-30 {
+    font-size: 18px;
+  }
 }
 
 .btn-primary.black {
@@ -1798,5 +1823,10 @@ ul.special-ul li::before {
   color: #2C114F;
   font-size: 1.25vw;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .btn-outline.primary {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=../css/style.css.map */
