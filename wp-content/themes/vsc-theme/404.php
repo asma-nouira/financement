@@ -24,16 +24,16 @@ get_header();
 						<span class="error-404__sparkle error-404__sparkle--3"></span>
 						<svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M100 10 C60 10, 30 40, 30 80 C30 110, 45 130, 55 160 C60 175, 62 200, 68 210 C72 216, 78 216, 82 210 C88 195, 90 175, 100 160 C110 175, 112 195, 118 210 C122 216, 128 216, 132 210 C138 200, 140 175, 145 160 C155 130, 170 110, 170 80 C170 40, 140 10, 100 10Z"
-								fill="#FFFFFF" stroke="#00B4B9" stroke-width="3"/>
+								fill="#FFFFFF" stroke="#2C114F" stroke-width="3"/>
 							<path d="M75 45 C80 35, 95 30, 105 35"
-								stroke="#00B4B9" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+								stroke="#2C114F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
 							<circle cx="82" cy="75" r="5" fill="#0A1E3D" opacity="0.6"/>
 							<circle cx="118" cy="75" r="5" fill="#0A1E3D" opacity="0.6"/>
 							<path d="M85 105 C90 98, 110 98, 115 105"
 								stroke="#0A1E3D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
-							<circle cx="150" cy="55" r="20" stroke="#00B4B9" stroke-width="3" fill="none" opacity="0.3"/>
-							<line x1="164" y1="69" x2="178" y2="83" stroke="#00B4B9" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
-							<text x="145" y="62" font-family="Be Vietnam Pro, sans-serif" font-size="20" font-weight="700" fill="#00B4B9" text-anchor="middle" opacity="0.35">?</text>
+							<circle cx="150" cy="55" r="20" stroke="#2C114F" stroke-width="3" fill="none" opacity="0.3"/>
+							<line x1="164" y1="69" x2="178" y2="83" stroke="#2C114F" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+							<text x="145" y="62" font-family="Be Vietnam Pro, sans-serif" font-size="20" font-weight="700" fill="#2C114F" text-anchor="middle" opacity="0.35">?</text>
 						</svg>
 						<div class="error-404__tooth-shadow"></div>
 					</div>
@@ -52,27 +52,18 @@ get_header();
 
 					<!-- Buttons -->
 					<div class="error-404__buttons">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="error-404__btn error-404__btn--primary">Retour à l'accueil</a>
-						<a href="<?php echo esc_url( home_url( '/nous-joindre' ) ); ?>" class="error-404__btn error-404__btn--secondary">Nous joindre</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="error-404__btn btn-primary">Retour à l'accueil</a>
+						
 					</div>
 
-					<!-- Helpful links -->
-					<nav class="error-404__links">
-						<p class="error-404__links-title">Pages utiles</p>
-						<ul class="error-404__links-list">
-							<li><a href="<?php echo esc_url( home_url( '/processus-pour-faire-une-demande/' ) ); ?>">Faire une demande</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/pour-les-cliniques-dentaires/' ) ); ?>">Cliniques dentaires</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">FAQ</a></li>
-						</ul>
-					</nav>
 
 				</div>
 
 				<!-- Wave decoration -->
 				<div class="error-404__wave">
 					<svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#00B4B9" opacity="0.06"/>
-						<path d="M0,80 C300,110 600,30 900,70 C1100,95 1300,60 1440,80 L1440,120 L0,120 Z" fill="#00B4B9" opacity="0.04"/>
+						<path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="#2C114F" opacity="0.06"/>
+						<path d="M0,80 C300,110 600,30 900,70 C1100,95 1300,60 1440,80 L1440,120 L0,120 Z" fill="#2C114F" opacity="0.04"/>
 					</svg>
 				</div>
 
