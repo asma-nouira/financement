@@ -408,5 +408,8 @@ em {
   .pb-25 {
     padding-bottom: 20px !important;
   }
+  .error-404__buttons a {
+    font-size: 14px !important;
+  }
 }
 /*# sourceMappingURL=../css/mobile.css.map */
