@@ -800,6 +800,14 @@ padding: 50px 25px!important;
   .vce-faq-group-item-content{
     border-top: none;
   }
+  h3{
+    font-size:calc(24vw / 19.2);
+     font-family: 'Inter Bold';
+     font-weight: 700;
+     @media(max-width:767px){
+font-size: 16px;
+     }
+  }
   .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:after, .vce-faq-group-icon-color--606060 .vce-faq-group-item-icon:before {
     background-color: black;
 }
@@ -808,12 +816,8 @@ padding: 50px 25px!important;
   color:white;
   h3{
      color:white;
-    font-size:calc(24vw / 19.2);
-     font-family: 'Inter Bold';
-     font-weight: 700;
-     @media(max-width:767px){
-font-size: 16px;
-     }
+     
+    
   }
   .vce-faq-group-item-icon{
     color:white;
