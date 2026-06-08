@@ -1864,6 +1864,14 @@ ul.special-ul li::before {
 }
 .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened h3 {
   color: white;
+  font-size: 1.25vw;
+  font-family: "Inter Bold";
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened h3 {
+    font-size: 16px;
+  }
 }
 .list-faq .vce-faq-group-item-heading.vce-faq-group-item--opened .vce-faq-group-item-icon {
   color: white;
