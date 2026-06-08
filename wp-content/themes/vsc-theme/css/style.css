@@ -1952,6 +1952,18 @@ ul.special-ul li::before {
 .section-avantages__card p {
   color: white;
 }
+.section-avantages__card .vce-single-image-figure-inner {
+  width: 2.1875vw !important;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .section-avantages__card .vce-single-image-figure-inner {
+    width: 25px !important;
+  }
+}
+.section-avantages__card .vce-single-image-figure-inner .vce-single-image-inner, .section-avantages__card .vce-single-image-figure-inner img {
+  width: 100%;
+}
 @media (max-width: 767px) {
   .section-avantages {
     padding: 50px 25px;

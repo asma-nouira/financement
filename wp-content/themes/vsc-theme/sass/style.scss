@@ -904,6 +904,16 @@ font-size: 16px;
     p {
      color:white;
     }
+    .vce-single-image-figure-inner{
+      width:calc(42vw / 19.2)!important;
+      height: auto;
+      @media(max-width:767px){
+        width:25px!important;
+      }
+      .vce-single-image-inner, img{
+        width:100%;
+      }
+    }
   }
  
   // ---- MOBILE ----
