@@ -1855,13 +1855,13 @@ ul.special-ul li::before {
 .list-faq .vce-faq-group-item-content {
   border-top: none;
 }
-.list-faq h3 {
+.list-faq .vce-faq-group .vce-faq-group-item-heading-title {
   font-size: 1.25vw;
   font-family: "Inter Bold";
   font-weight: 700;
 }
 @media (max-width: 767px) {
-  .list-faq h3 {
+  .list-faq .vce-faq-group .vce-faq-group-item-heading-title {
     font-size: 16px;
   }
 }
