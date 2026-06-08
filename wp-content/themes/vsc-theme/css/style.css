@@ -1585,6 +1585,8 @@ ul.special-ul li::before {
   }
   .section-conditions__circle-label {
     font-size: 12px;
+  }
+  .section-conditions__circle-label em {
     letter-spacing: 0 !important;
   }
   .section-conditions__circle-value {
