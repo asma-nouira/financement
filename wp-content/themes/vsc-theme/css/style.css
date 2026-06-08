@@ -1601,14 +1601,30 @@ ul.special-ul li::before {
   padding: 7.0833333333vw 28.90625vw 6.5104166667vw;
   color: white;
 }
+@media (max-width: 767px) {
+  .section-access {
+    padding: 50px 35px;
+  }
+}
 .section-access h2 {
   padding-bottom: 1.0416666667vw;
   color: white;
+}
+@media (max-width: 767px) {
+  .section-access h2 {
+    padding-bottom: 20px;
+  }
 }
 .section-access .desc {
   font-size: 1.5625vw;
   line-height: 1.33;
   padding-bottom: 1.0416666667vw;
+}
+@media (max-width: 767px) {
+  .section-access .desc {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
 }
 .section-access .section-cta__buttons {
   margin-top: 0;
@@ -1626,11 +1642,22 @@ ul.special-ul li::before {
   border: none;
   margin-bottom: 1.0416666667vw;
 }
+@media (max-width: 767px) {
+  .list-faq .vce-faq-group-shape--square .vce-faq-group-item {
+    margin-bottom: 20px;
+  }
+}
 .list-faq .vce-faq-group-item-heading {
   padding: 1.0416666667vw 2.9166666667vw;
   color: #000000;
   background-color: #F5F5F5;
   border-radius: 1.8229166667vw;
+}
+@media (max-width: 767px) {
+  .list-faq .vce-faq-group-item-heading {
+    padding: 20px 30px;
+    border-radius: 25px;
+  }
 }
 .list-faq .vce-faq-group-item-content {
   border-top: none;
@@ -1659,6 +1686,11 @@ ul.special-ul li::before {
 .list-faq .vce-faq-group-item-icon {
   right: 1.5625vw;
 }
+@media (max-width: 767px) {
+  .list-faq .vce-faq-group-item-icon {
+    right: 20px;
+  }
+}
 .list-faq .vce-faq-group-item-icon:after {
   height: 12px;
 }
@@ -1669,10 +1701,21 @@ ul.special-ul li::before {
 .title-cliniq {
   padding: 4.9479166667vw 14.4791666667vw;
 }
+@media (max-width: 767px) {
+  .title-cliniq {
+    padding: 50px 25px;
+  }
+}
 
 .section-avantages__grid {
   padding-left: 14.4791666667vw;
   padding-right: 14.4791666667vw;
+}
+@media (max-width: 767px) {
+  .section-avantages__grid {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .section-avantages__grid {
