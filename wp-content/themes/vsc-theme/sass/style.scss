@@ -625,31 +625,23 @@ color: #1ea524;
     float: left;
   }
 
-  // ---- ANIMATIONS ----
-  &__card.anim-fade-left,
-  &__card.anim-fade-right {
-    // hérite de animations.scss
-  }
-
   // ---- MOBILE ----
   @include mobile {
-    padding: calc(50vw / 7.5) calc(30vw / 7.5);
-
-    &__title {
-      font-size: calc(26vw / 7.5);
-      margin-bottom: calc(40vw / 7.5);
+    &__grid{
+padding: 50px 25px!important;
     }
+   
 
     &__card {
-      width: 100%;
+      width: 100%!important;
       float: none !important;
       margin-top: 0 !important;
-      margin-bottom: calc(20vw / 7.5);
-      box-shadow: calc(6vw / 7.5) calc(6vw / 7.5) 0px 0px $color-secondary;
-      padding: calc(30vw / 7.5) calc(26vw / 7.5);
+      margin-bottom: 20px!important;
+      box-shadow: 6px 6px  0px 0px $color-secondary;
+      padding: 25px!important;
 
-      h3 { font-size: calc(20vw / 7.5); }
-      p  { font-size: calc(14vw / 7.5); }
+      h3 { font-size: 20px!important; }
+      p  { font-size: 14px !important; }
     }
   }
 }
@@ -722,17 +714,17 @@ color: #1ea524;
  
   // ---- MOBILE ----
   @include mobile {
-    padding: calc(50vw / 7.5) calc(20vw / 7.5);
+    padding:40px  25px;
  
  
     &__circle {
-      width: calc(155vw / 7.5);
-      height: calc(155vw / 7.5);
-      margin: calc(10vw / 7.5) calc(8vw / 7.5);
+      width: 150px;
+      height: 150px;
+      margin: 10px 8px;
  
-      &-label { font-size: calc(9vw / 7.5); }
-      &-value { font-size: calc(18vw / 7.5); }
-      &-sub   { font-size: calc(11vw / 7.5); }
+      &-label { font-size: 9px; }
+      &-value { font-size:16px; }
+      &-sub   { font-size: 11px; }
     }
   }
 }

@@ -1493,26 +1493,22 @@ ul.special-ul li::before {
   float: left;
 }
 @media (max-width: 767px) {
-  .section-etapes {
-    padding: 6.6666666667vw 4vw;
-  }
-  .section-etapes__title {
-    font-size: 3.4666666667vw;
-    margin-bottom: 5.3333333333vw;
+  .section-etapes__grid {
+    padding: 50px 25px !important;
   }
   .section-etapes__card {
-    width: 100%;
+    width: 100% !important;
     float: none !important;
     margin-top: 0 !important;
-    margin-bottom: 2.6666666667vw;
-    box-shadow: 0.8vw 0.8vw 0px 0px #976CFF;
-    padding: 4vw 3.4666666667vw;
+    margin-bottom: 20px !important;
+    box-shadow: 6px 6px 0px 0px #976CFF;
+    padding: 25px !important;
   }
   .section-etapes__card h3 {
-    font-size: 2.6666666667vw;
+    font-size: 20px !important;
   }
   .section-etapes__card p {
-    font-size: 1.8666666667vw;
+    font-size: 14px !important;
   }
 }
 
@@ -1573,21 +1569,21 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .section-conditions {
-    padding: 6.6666666667vw 2.6666666667vw;
+    padding: 40px 25px;
   }
   .section-conditions__circle {
-    width: 20.6666666667vw;
-    height: 20.6666666667vw;
-    margin: 1.3333333333vw 1.0666666667vw;
+    width: 150px;
+    height: 150px;
+    margin: 10px 8px;
   }
   .section-conditions__circle-label {
-    font-size: 1.2vw;
+    font-size: 9px;
   }
   .section-conditions__circle-value {
-    font-size: 2.4vw;
+    font-size: 16px;
   }
   .section-conditions__circle-sub {
-    font-size: 1.4666666667vw;
+    font-size: 11px;
   }
 }
 
