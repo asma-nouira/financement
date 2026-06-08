@@ -1709,7 +1709,7 @@ ul.special-ul li::before {
 }
 @media (max-width: 767px) {
   .list-faq .vce-faq-group-item-icon {
-    right: 20px;
+    right: 10px;
   }
 }
 .list-faq .vce-faq-group-item-icon:after {
