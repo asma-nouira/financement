@@ -1691,4 +1691,15 @@ ul.special-ul li::before {
   padding-right: 23.4375vw;
   padding-bottom: 4.4270833333vw;
 }
+
+.section-infos {
+  padding-top: 9.8958333333vw;
+  padding-bottom: 5.2083333333vw;
+}
+.section-infos .title-bold {
+  font-size: 1.25vw;
+  font-family: "Inter Bold";
+  line-height: 1.2;
+  padding-bottom: 1.8229166667vw;
+}
 /*# sourceMappingURL=../css/style.css.map */
