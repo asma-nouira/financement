@@ -633,7 +633,7 @@ padding: 50px 25px!important;
    
 
     &__card {
-      width: 100%!important;
+      width: calc(100% - 50px)!important;
       float: none !important;
       margin-top: 0 !important;
       margin-bottom: 20px!important;
