@@ -1511,9 +1511,11 @@ ul.special-ul li::before {
   }
   .section-etapes__card h3 {
     font-size: 20px !important;
+    margin-bottom: 13px !important;
   }
   .section-etapes__card p {
     font-size: 14px !important;
+    margin-bottom: 13px !important;
   }
 }
 
