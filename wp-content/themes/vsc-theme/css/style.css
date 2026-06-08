@@ -1723,4 +1723,13 @@ ul.special-ul li::before {
   font-size: 1.5625vw;
   line-height: 1.33;
 }
+
+.btn-primary.black {
+  background-color: balck !important;
+}
+
+.btn-outline.primary {
+  border-color: #2C114F;
+  color: #2C114F;
+}
 /*# sourceMappingURL=../css/style.css.map */

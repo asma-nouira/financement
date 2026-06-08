@@ -893,3 +893,10 @@ color: #1ea524;
   font-size: calc(30vw / 19.2);
   line-height:1.33 ;
 }
+.btn-primary.black{
+  background-color: balck!important;
+}
+.btn-outline.primary{
+  border-color: $color-primary;
+  color:$color-primary
+}
