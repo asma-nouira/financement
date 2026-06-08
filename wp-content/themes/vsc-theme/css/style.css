@@ -1731,5 +1731,7 @@ ul.special-ul li::before {
 .btn-outline.primary {
   border-color: #2C114F;
   color: #2C114F;
+  font-size: 1.25vw;
+  font-weight: bold;
 }
 /*# sourceMappingURL=../css/style.css.map */
