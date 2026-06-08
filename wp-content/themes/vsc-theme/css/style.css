@@ -1407,16 +1407,37 @@ ul.special-ul li::before {
 .section-cta.paterns {
   padding: 7.1875vw 21.6666666667vw 6.7708333333vw;
 }
+@media (max-width: 767px) {
+  .section-cta.paterns {
+    padding: 50px 30px;
+  }
+}
 .section-cta.paterns h2 {
   padding-bottom: 1.0416666667vw;
+}
+@media (max-width: 767px) {
+  .section-cta.paterns h2 {
+    padding-bottom: 20px;
+  }
 }
 .section-cta.paterns p {
   padding-bottom: 0;
   padding-left: 13.5416666667vw;
   padding-right: 13.5416666667vw;
 }
+@media (max-width: 767px) {
+  .section-cta.paterns p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .section-cta.paterns .section-cta__buttons {
   margin-top: 1.8229166667vw;
+}
+@media (max-width: 767px) {
+  .section-cta.paterns .section-cta__buttons {
+    margin-top: 15px;
+  }
 }
 .section-cta.paterns .btn-primary {
   background-color: black;
