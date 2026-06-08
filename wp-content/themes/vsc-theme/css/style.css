@@ -2251,7 +2251,7 @@ ul.special-ul li::before {
    ============================================= */
 @media screen and (max-width: 1024px) {
   .error-404__container {
-    width: 690px;
+    width: 80%;
     padding-top: 80px;
     padding-bottom: 120px;
   }
