@@ -1065,7 +1065,7 @@ body .wpcf7-mail-sent-ok {
   .section-hero__content p {
     font-size: 14px;
     padding-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   .section-hero__image {
     width: 100%;
