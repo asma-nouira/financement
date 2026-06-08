@@ -1584,7 +1584,7 @@ ul.special-ul li::before {
     margin: 10px 8px;
   }
   .section-conditions__circle-label {
-    font-size: 9px;
+    font-size: 12px;
   }
   .section-conditions__circle-value {
     font-size: 16px;
