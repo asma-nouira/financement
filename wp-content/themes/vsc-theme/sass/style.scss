@@ -1043,7 +1043,7 @@ font-size: 16px;
 .error-404__sparkle {
 	position: absolute;
 	border-radius: 50%;
-	background-color: #00B4B9;
+	background-color: $color-secondary;
 	opacity: 0;
 }
  
@@ -1091,7 +1091,7 @@ font-size: 16px;
 }
  
 .error-404__code span {
-	color: #00B4B9;
+	color: $color-secondary;
 }
  
  
@@ -1130,87 +1130,9 @@ font-size: 16px;
 	opacity: 0;
 	animation: error404-fadeSlideUp 0.6s 0.8s ease-out forwards;
 }
+
  
-.error-404__btn {
-	display: inline-block;
-	font-family: 'Inter', sans-serif;
-	font-size: calc(15 / 19.2 * 1vw);
-	font-weight: 600;
-	text-decoration: none;
-	padding: calc(14 / 19.2 * 1vw) calc(36 / 19.2 * 1vw);
-	border-radius: calc(50 / 19.2 * 1vw);
-	transition: all 0.3s ease;
-	letter-spacing: 0.01em;
-}
- 
-.error-404__btn--primary {
-	background-color: #00B4B9;
-	color: #FFFFFF;
-	margin-right: calc(16 / 19.2 * 1vw);
-}
- 
-.error-404__btn--primary:hover {
-	background-color: #009A9E;
-	transform: translateY(-2px);
-	box-shadow: 0 calc(8 / 19.2 * 1vw) calc(24 / 19.2 * 1vw) rgba(0, 180, 185, 0.3);
-}
- 
-.error-404__btn--secondary {
-	background-color: transparent;
-	color: #0A1E3D;
-	border: 2px solid #E0E5EC;
-}
- 
-.error-404__btn--secondary:hover {
-	border-color: #00B4B9;
-	color: #00B4B9;
-	transform: translateY(-2px);
-}
- 
- 
-/* —— LINKS UTILES —— */
-.error-404__links {
-	margin-top: calc(50 / 19.2 * 1vw);
-	opacity: 0;
-	animation: error404-fadeSlideUp 0.6s 1s ease-out forwards;
-}
- 
-.error-404__links-title {
-	font-family: 'Inter', sans-serif;
-	font-size: calc(13 / 19.2 * 1vw);
-	font-weight: 600;
-	color: #6B7A8D;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	margin-bottom: calc(18 / 19.2 * 1vw);
-}
- 
-.error-404__links-list {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
- 
-.error-404__links-list li {
-	display: inline-block;
-	margin: 0 calc(12 / 19.2 * 1vw);
-}
- 
-.error-404__links-list a {
-	font-family: 'Inter', sans-serif;
-	font-size: calc(14 / 19.2 * 1vw);
-	font-weight: 500;
-	color: #0A1E3D;
-	text-decoration: none;
-	padding-bottom: calc(2 / 19.2 * 1vw);
-	border-bottom: 1px solid transparent;
-	transition: all 0.3s ease;
-}
- 
-.error-404__links-list a:hover {
-	color: #00B4B9;
-	border-bottom-color: #00B4B9;
-}
+
  
  
 /* —— WAVE DECORATION —— */
@@ -1268,87 +1190,80 @@ font-size: 16px;
 @media screen and (max-width: 1024px) {
  
 	.error-404__container {
-		width: calc(690 / 7.5 * 1vw);
-		padding-top: calc(80 / 7.5 * 1vw);
-		padding-bottom: calc(120 / 7.5 * 1vw);
+		width: 690px;
+		padding-top: 80px;
+		padding-bottom: 120px;
 	}
  
 	.error-404__tooth-wrap {
-		width: calc(240 / 7.5 * 1vw);
-		height: calc(240 / 7.5 * 1vw);
-		margin-bottom: calc(40 / 7.5 * 1vw);
+		width: 240px;
+		height: 240px;
+		margin-bottom: 40px;
 	}
  
 	.error-404__tooth-shadow {
-		bottom: calc(-10 / 7.5 * 1vw);
-		width: calc(120 / 7.5 * 1vw);
-		height: calc(16 / 7.5 * 1vw);
+		bottom:-10px;
+		width: 120px;
+		height:16px;
 	}
  
 	.error-404__sparkle--1 {
-		width: calc(10 / 7.5 * 1vw);
-		height: calc(10 / 7.5 * 1vw);
+		width: 10px;
+		height: 10px;
 	}
  
 	.error-404__sparkle--2 {
-		width: calc(8 / 7.5 * 1vw);
-		height: calc(8 / 7.5 * 1vw);
+		width: 8px;
+		height: 8px;
 	}
  
 	.error-404__sparkle--3 {
-		width: calc(6 / 7.5 * 1vw);
-		height: calc(6 / 7.5 * 1vw);
+		width: 6px;
+		height: 6px;
 	}
  
 	.error-404__code {
-		font-size: calc(120 / 7.5 * 1vw);
-		margin-bottom: calc(16 / 7.5 * 1vw);
+		font-size: 120px;
+		margin-bottom: 20px;
 	}
  
 	.error-404__title {
-		font-size: calc(40 / 7.5 * 1vw);
-		margin-bottom: calc(24 / 7.5 * 1vw);
+		font-size: 20px;
+		margin-bottom: 20px;
 	}
  
 	.error-404__text {
-		font-size: calc(26 / 7.5 * 1vw);
+		font-size: 18px;
 		max-width: 100%;
-		margin-bottom: calc(50 / 7.5 * 1vw);
+		margin-bottom: 40px;
 		line-height: 1.6;
 	}
- 
-	.error-404__btn {
-		font-size: calc(26 / 7.5 * 1vw);
-		padding: calc(22 / 7.5 * 1vw) calc(44 / 7.5 * 1vw);
-		border-radius: calc(60 / 7.5 * 1vw);
-		display: block;
-		text-align: center;
-	}
+
  
 	.error-404__btn--primary {
 		margin-right: 0;
-		margin-bottom: calc(20 / 7.5 * 1vw);
+		margin-bottom: 20px;
 	}
  
 	.error-404__links {
-		margin-top: calc(60 / 7.5 * 1vw);
+		margin-top: 60px;
 	}
  
 	.error-404__links-title {
-		font-size: calc(22 / 7.5 * 1vw);
-		margin-bottom: calc(24 / 7.5 * 1vw);
+		font-size: 18px;
+		margin-bottom: 20px;
 	}
  
 	.error-404__links-list li {
 		display: block;
-		margin: 0 0 calc(20 / 7.5 * 1vw) 0;
+		margin: 0 0 20px 0;
 	}
  
 	.error-404__links-list a {
-		font-size: calc(26 / 7.5 * 1vw);
+		font-size: 18px;
 	}
  
 	.error-404__wave {
-		height: calc(80 / 7.5 * 1vw);
+		height: 80px;
 	}
 }
