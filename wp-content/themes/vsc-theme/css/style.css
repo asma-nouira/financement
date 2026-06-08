@@ -2044,4 +2044,360 @@ ul.special-ul li::before {
     font-size: 14px;
   }
 }
+
+/* —— SECTION —— */
+.error-404 {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 4.1666666667vw);
+  background: linear-gradient(170deg, #FFFFFF 0%, #F5F7FA 50%, #FFFFFF 100%);
+  overflow: hidden;
+}
+
+.error-404__container {
+  position: relative;
+  width: 62.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4.1666666667vw;
+  padding-bottom: 4.1666666667vw;
+  text-align: center;
+}
+
+/* —— TOOTH ILLUSTRATION —— */
+.error-404__tooth-wrap {
+  position: relative;
+  display: inline-block;
+  width: 10.4166666667vw;
+  height: 10.4166666667vw;
+  margin-bottom: 2.0833333333vw;
+  animation: error404-toothFloat 3s ease-in-out infinite;
+}
+
+.error-404__tooth-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.error-404__tooth-shadow {
+  position: absolute;
+  bottom: -0.5208333333vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.2083333333vw;
+  height: 0.7291666667vw;
+  background: radial-gradient(ellipse, rgba(10, 30, 61, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: error404-shadowPulse 3s ease-in-out infinite;
+}
+
+@keyframes error404-toothFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.625vw);
+  }
+}
+@keyframes error404-shadowPulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.75);
+    opacity: 0.5;
+  }
+}
+/* —— SPARKLES —— */
+.error-404__sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #00B4B9;
+  opacity: 0;
+}
+
+.error-404__sparkle--1 {
+  width: 0.4166666667vw;
+  height: 0.4166666667vw;
+  top: 1.0416666667vw;
+  right: 0.78125vw;
+  animation: error404-sparkle 2.5s 0.5s ease-in-out infinite;
+}
+
+.error-404__sparkle--2 {
+  width: 0.3125vw;
+  height: 0.3125vw;
+  top: 3.125vw;
+  left: 0.5208333333vw;
+  animation: error404-sparkle 2.5s 1.2s ease-in-out infinite;
+}
+
+.error-404__sparkle--3 {
+  width: 0.2604166667vw;
+  height: 0.2604166667vw;
+  bottom: 2.6041666667vw;
+  right: 1.5625vw;
+  animation: error404-sparkle 2.5s 0.8s ease-in-out infinite;
+}
+
+@keyframes error404-sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+/* —— 404 CODE —— */
+.error-404__code {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 6.25vw;
+  font-weight: 700;
+  color: #0A1E3D;
+  line-height: 1;
+  margin-bottom: 0.8333333333vw;
+  letter-spacing: -0.03em;
+  opacity: 0;
+  animation: error404-fadeSlideUp 0.6s 0.2s ease-out forwards;
+}
+
+.error-404__code span {
+  color: #00B4B9;
+}
+
+/* —— TITLE —— */
+.error-404__title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1.6666666667vw;
+  font-weight: 600;
+  color: #0A1E3D;
+  line-height: 1.3;
+  margin-bottom: 1.0416666667vw;
+  opacity: 0;
+  animation: error404-fadeSlideUp 0.6s 0.4s ease-out forwards;
+}
+
+/* —— DESCRIPTION —— */
+.error-404__text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8333333333vw;
+  font-weight: 400;
+  color: #6B7A8D;
+  line-height: 1.7;
+  max-width: 29.1666666667vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.0833333333vw;
+  opacity: 0;
+  animation: error404-fadeSlideUp 0.6s 0.6s ease-out forwards;
+}
+
+/* —— BUTTONS —— */
+.error-404__buttons {
+  display: inline-block;
+  opacity: 0;
+  animation: error404-fadeSlideUp 0.6s 0.8s ease-out forwards;
+}
+
+.error-404__btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.78125vw;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.7291666667vw 1.875vw;
+  border-radius: 2.6041666667vw;
+  transition: all 0.3s ease;
+  letter-spacing: 0.01em;
+}
+
+.error-404__btn--primary {
+  background-color: #00B4B9;
+  color: #FFFFFF;
+  margin-right: 0.8333333333vw;
+}
+
+.error-404__btn--primary:hover {
+  background-color: #009A9E;
+  transform: translateY(-2px);
+  box-shadow: 0 0.4166666667vw 1.25vw rgba(0, 180, 185, 0.3);
+}
+
+.error-404__btn--secondary {
+  background-color: transparent;
+  color: #0A1E3D;
+  border: 2px solid #E0E5EC;
+}
+
+.error-404__btn--secondary:hover {
+  border-color: #00B4B9;
+  color: #00B4B9;
+  transform: translateY(-2px);
+}
+
+/* —— LINKS UTILES —— */
+.error-404__links {
+  margin-top: 2.6041666667vw;
+  opacity: 0;
+  animation: error404-fadeSlideUp 0.6s 1s ease-out forwards;
+}
+
+.error-404__links-title {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6770833333vw;
+  font-weight: 600;
+  color: #6B7A8D;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.9375vw;
+}
+
+.error-404__links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-404__links-list li {
+  display: inline-block;
+  margin: 0 0.625vw;
+}
+
+.error-404__links-list a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7291666667vw;
+  font-weight: 500;
+  color: #0A1E3D;
+  text-decoration: none;
+  padding-bottom: 0.1041666667vw;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.error-404__links-list a:hover {
+  color: #00B4B9;
+  border-bottom-color: #00B4B9;
+}
+
+/* —— WAVE DECORATION —— */
+.error-404__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6.25vw;
+  overflow: hidden;
+}
+
+.error-404__wave svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* —— ENTRANCE ANIMATION —— */
+@keyframes error404-fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.0416666667vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* —— REDUCED MOTION —— */
+@media (prefers-reduced-motion: reduce) {
+  .error-404__tooth-wrap,
+  .error-404__tooth-shadow,
+  .error-404__sparkle,
+  .error-404__code,
+  .error-404__title,
+  .error-404__text,
+  .error-404__buttons,
+  .error-404__links {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+/* =============================================
+   RESPONSIVE — MOBILE (÷ 7.5 basé sur 750px)
+   ============================================= */
+@media screen and (max-width: 1024px) {
+  .error-404__container {
+    width: 92vw;
+    padding-top: 10.6666666667vw;
+    padding-bottom: 16vw;
+  }
+  .error-404__tooth-wrap {
+    width: 32vw;
+    height: 32vw;
+    margin-bottom: 5.3333333333vw;
+  }
+  .error-404__tooth-shadow {
+    bottom: -1.3333333333vw;
+    width: 16vw;
+    height: 2.1333333333vw;
+  }
+  .error-404__sparkle--1 {
+    width: 1.3333333333vw;
+    height: 1.3333333333vw;
+  }
+  .error-404__sparkle--2 {
+    width: 1.0666666667vw;
+    height: 1.0666666667vw;
+  }
+  .error-404__sparkle--3 {
+    width: 0.8vw;
+    height: 0.8vw;
+  }
+  .error-404__code {
+    font-size: 16vw;
+    margin-bottom: 2.1333333333vw;
+  }
+  .error-404__title {
+    font-size: 5.3333333333vw;
+    margin-bottom: 3.2vw;
+  }
+  .error-404__text {
+    font-size: 3.4666666667vw;
+    max-width: 100%;
+    margin-bottom: 6.6666666667vw;
+    line-height: 1.6;
+  }
+  .error-404__btn {
+    font-size: 3.4666666667vw;
+    padding: 2.9333333333vw 5.8666666667vw;
+    border-radius: 8vw;
+    display: block;
+    text-align: center;
+  }
+  .error-404__btn--primary {
+    margin-right: 0;
+    margin-bottom: 2.6666666667vw;
+  }
+  .error-404__links {
+    margin-top: 8vw;
+  }
+  .error-404__links-title {
+    font-size: 2.9333333333vw;
+    margin-bottom: 3.2vw;
+  }
+  .error-404__links-list li {
+    display: block;
+    margin: 0 0 2.6666666667vw 0;
+  }
+  .error-404__links-list a {
+    font-size: 3.4666666667vw;
+  }
+  .error-404__wave {
+    height: 10.6666666667vw;
+  }
+}
 /*# sourceMappingURL=../css/style.css.map */
