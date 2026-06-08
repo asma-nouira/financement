@@ -19,7 +19,7 @@
       <nav class="site-footer__nav">
           
         <ul class="site-footer__nav-col first">
-          <li><a href="/a-propos">À PROPOS</a></li>
+          <li><a href="/">À PROPOS</a></li>
           <li><a href="/processus-pour-faire-un-demande">PROCESSUS POUR FAIRE UN DEMANDE</a></li>
         </ul>
 
