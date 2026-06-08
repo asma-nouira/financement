@@ -1430,6 +1430,11 @@ ul.special-ul li::before {
 .title-step {
   padding: 5vw 21.875vw 3.9583333333vw;
 }
+@media (max-width: 767px) {
+  .title-step {
+    padding: 50px 25px;
+  }
+}
 
 .section-etapes__grid {
   position: relative;

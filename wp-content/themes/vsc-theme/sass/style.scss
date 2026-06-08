@@ -539,6 +539,9 @@ color: #1ea524;
 
 .title-step{
   padding: calc(96vw / 19.2) calc(420vw / 19.2) calc(76vw / 19.2);
+  @media(max-width:767px){
+    padding: 50px 25px;
+  }
 }
 
 // ============================================
