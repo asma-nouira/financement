@@ -20,7 +20,7 @@
           
         <ul class="site-footer__nav-col first">
           <li><a href="/">À PROPOS</a></li>
-          <li><a href="/processus-pour-faire-une-demande">PROCESSUS POUR FAIRE UN DEMANDE</a></li>
+          <li><a href="/processus-pour-faire-une-demande">PROCESSUS POUR FAIRE UNE DEMANDE</a></li>
         </ul>
 
         <ul class="site-footer__nav-col">
