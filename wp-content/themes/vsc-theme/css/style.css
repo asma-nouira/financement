@@ -2044,6 +2044,9 @@ ul.special-ul li::before {
     font-size: 14px;
   }
 }
+.btn-outline.primary:hover {
+  color: white !important;
+}
 
 /* —— SECTION —— */
 .error-404 {
