@@ -12,7 +12,7 @@
 
       <!-- Logo -->
       <div class="site-footer__logo">
-        <a href="/"><img src="/wp-content/uploads/2026/06/Logo-footer.png" alt="Fianancement sourire"></a>
+        <a href="/"><img src="/wp-content/uploads/2026/06/Logo-footer.png" alt="Financement sourire"></a>
       </div>
 
       <!-- Navigation centre -->
